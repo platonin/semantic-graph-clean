@@ -1,0 +1,28 @@
+{
+  "total_input_tokens": 71301,
+  "total_output_tokens": 89929,
+  "total_calls": 63,
+  "total_failures": 0,
+  "by_stage": {
+    "pass1_summarize": {
+      "input_tokens": 13689,
+      "output_tokens": 16650,
+      "n_calls": 28
+    },
+    "pass1_aggregate_l2": {
+      "input_tokens": 4420,
+      "output_tokens": 8508,
+      "n_calls": 6
+    },
+    "pass1_root": {
+      "input_tokens": 2177,
+      "output_tokens": 1500,
+      "n_calls": 1
+    },
+    "pass2_extraction": {
+      "input_tokens": 51015,
+      "output_tokens": 63271,
+      "n_calls": 28
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "graph_score": 0.0687990402985631,
+  "node_weight": 0.6,
+  "edge_weight": 0.4,
+  "nodes": {
+    "precision": 0.8803266684214274,
+    "recall": 0.048017818277532404,
+    "f_beta": 0.09106827604359594,
+    "beta": 1.0,
+    "tau": 0.6,
+    "tp": 2.6409800052642822,
+    "pred_count": 3,
+    "gt_count": 55,
+    "matched_count": 3
+  },
+  "edges": {
+    "precision": 0.9202748537063599,
+    "recall": 0.018044604974634507,
+    "f_beta": 0.03539518668101384,
+    "beta": 1.0,
+    "tau": 0.6,
+    "tp": 0.9202748537063599,
+    "pred_count": 1,
+    "gt_count": 51,
+    "matched_count": 1
+  },
+  "pred_structure": {
+    "n_nodes": 3,
+    "n_edges": 1,
+    "density": 0.16666666666666666,
+    "n_components": 2,
+    "n_isolated": 1,
+    "component_sizes": [
+      2,
+      1
+    ],
+    "component_size_min": 1,
+    "component_size_max": 2,
+    "component_size_mean": 1.5,
+    "component_size_quantiles": {
+      "q25": 1.25,
+      "q50": 1.5,
+      "q75": 1.75,
+      "q90": 1.9
+    }
+  },
+  "gt_structure": {
+    "n_nodes": 55,
+    "n_edges": 51,
+    "density": 0.01717171717171717,
+    "n_components": 6,
+    "n_isolated": 0,
+    "component_sizes": [
+      20,
+      11,
+      9,
+      7,
+      6,
+      2
+    ],
+    "component_size_min": 2,
+    "component_size_max": 20,
+    "component_size_mean": 9.166666666666666,
+    "component_size_quantiles": {
+      "q25": 6.25,
+      "q50": 8.0,
+      "q75": 10.5,
+      "q90": 15.5
+    }
+  }
+}

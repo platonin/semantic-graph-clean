@@ -1,0 +1,27 @@
+{
+  "graph_score": 0.20138604646578273,
+  "node_weight": 0.6,
+  "edge_weight": 0.4,
+  "nodes": {
+    "precision": 0.12922792195489533,
+    "recall": 0.3571389843117107,
+    "f_beta": 0.18978400132506365,
+    "beta": 1.0,
+    "tau": 0.6,
+    "tp": 19.64264413714409,
+    "pred_count": 152,
+    "gt_count": 55,
+    "matched_count": 45
+  },
+  "edges": {
+    "precision": 0.15920815004834107,
+    "recall": 0.3496335844198863,
+    "f_beta": 0.21878911417686137,
+    "beta": 1.0,
+    "tau": 0.6,
+    "tp": 17.8313128054142,
+    "pred_count": 112,
+    "gt_count": 51,
+    "matched_count": 36
+  }
+}

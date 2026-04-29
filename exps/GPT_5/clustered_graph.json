@@ -1,0 +1,3782 @@
+{
+  "meta": {
+    "created_at": "2026-05-03T19:14:12.996377+00:00",
+    "source_text": "graph.md",
+    "pipeline_version": "0.2.0",
+    "config_summary": {
+      "source": "GPT-5 reference graph (manual)",
+      "md_file": "graph.md",
+      "entities": 109,
+      "literals": 25
+    },
+    "stats": {
+      "nodes": 134,
+      "edges": 159,
+      "entity_nodes": 109,
+      "literal_nodes": 25
+    }
+  },
+  "nodes": [
+    {
+      "id": "E01",
+      "label": "Задача классификации",
+      "members": [
+        "E01"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Задача классификации",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "label": "Бинарная классификация",
+      "members": [
+        "E02"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Бинарная классификация",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "label": "Классификация на `K` классов",
+      "members": [
+        "E03"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Классификация на `K` классов",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E04",
+      "label": "Объект / обучающий пример `x_i`",
+      "members": [
+        "E04"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Объект / обучающий пример `x_i`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E05",
+      "label": "Пространство признаков `R^D`",
+      "members": [
+        "E05"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Пространство признаков `R^D`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E06",
+      "label": "Таргет / метка класса `y_i`",
+      "members": [
+        "E06"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Таргет / метка класса `y_i`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E07",
+      "label": "Кодировка классов `{-1, 1}`",
+      "members": [
+        "E07"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Кодировка классов `{-1, 1}`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E08",
+      "label": "Кодировка классов `{0, 1}`",
+      "members": [
+        "E08"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Кодировка классов `{0, 1}`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E09",
+      "label": "Положительный класс",
+      "members": [
+        "E09"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Положительный класс",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E10",
+      "label": "Отрицательный класс",
+      "members": [
+        "E10"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Отрицательный класс",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E11",
+      "label": "Линейная модель",
+      "members": [
+        "E11"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Линейная модель",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E12",
+      "label": "Вектор весов `w`",
+      "members": [
+        "E12"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Вектор весов `w`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E13",
+      "label": "Линейный скор `⟨w, x_i⟩`",
+      "members": [
+        "E13"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Линейный скор `⟨w, x_i⟩`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E14",
+      "label": "Разделяющая плоскость / гиперплоскость",
+      "members": [
+        "E14"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Разделяющая плоскость / гиперплоскость",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E15",
+      "label": "Предсказание класса `sign⟨w, x_i⟩`",
+      "members": [
+        "E15"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Предсказание класса `sign⟨w, x_i⟩`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E16",
+      "label": "Линейно разделимая выборка",
+      "members": [
+        "E16"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Линейно разделимая выборка",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E17",
+      "label": "Объекты одного класса",
+      "members": [
+        "E17"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Объекты одного класса",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E18",
+      "label": "Объекты другого класса",
+      "members": [
+        "E18"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Объекты другого класса",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E19",
+      "label": "Подход “решать классификацию как регрессию”",
+      "members": [
+        "E19"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Подход “решать классификацию как регрессию”",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E20",
+      "label": "MSE",
+      "members": [
+        "E20"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "MSE",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E21",
+      "label": "Взятие знака после регрессии",
+      "members": [
+        "E21"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Взятие знака после регрессии",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E22",
+      "label": "Ошибка около разделяющей плоскости",
+      "members": [
+        "E22"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Ошибка около разделяющей плоскости",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E23",
+      "label": "Неважность модуля предсказания при правильном знаке",
+      "members": [
+        "E23"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Неважность модуля предсказания при правильном знаке",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E24",
+      "label": "Прямая, разделяющая точки",
+      "members": [
+        "E24"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Прямая, разделяющая точки",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E25",
+      "label": "Прямая, проходящая через точки",
+      "members": [
+        "E25"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Прямая, проходящая через точки",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E26",
+      "label": "Число ошибок классификатора",
+      "members": [
+        "E26"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Число ошибок классификатора",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E27",
+      "label": "Индикатор ошибки `[y_i ≠ sign⟨w, x_i⟩]`",
+      "members": [
+        "E27"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Индикатор ошибки `[y_i ≠ sign⟨w, x_i⟩]`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E28",
+      "label": "Эквивалентный индикатор `[y_i⟨w, x_i⟩ < 0]`",
+      "members": [
+        "E28"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Эквивалентный индикатор `[y_i⟨w, x_i⟩ < 0]`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E29",
+      "label": "Отступ `M = y_i⟨w, x_i⟩`",
+      "members": [
+        "E29"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Отступ `M = y_i⟨w, x_i⟩`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E30",
+      "label": "Положительный отступ",
+      "members": [
+        "E30"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Положительный отступ",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E31",
+      "label": "Отрицательный отступ",
+      "members": [
+        "E31"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Отрицательный отступ",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E32",
+      "label": "Уверенность классификатора",
+      "members": [
+        "E32"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Уверенность классификатора",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E33",
+      "label": "Расстояние до разделяющей гиперплоскости",
+      "members": [
+        "E33"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Расстояние до разделяющей гиперплоскости",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E34",
+      "label": "Misclassification loss",
+      "members": [
+        "E34"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Misclassification loss",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E35",
+      "label": "Функция `F(M) = [M < 0]`",
+      "members": [
+        "E35"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Функция `F(M) = [M < 0]`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E36",
+      "label": "Кусочно-постоянная функция",
+      "members": [
+        "E36"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Кусочно-постоянная функция",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E37",
+      "label": "Градиентные методы",
+      "members": [
+        "E37"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Градиентные методы",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E38",
+      "label": "Гладкая мажоранта / суррогатная функция потерь",
+      "members": [
+        "E38"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Гладкая мажоранта / суррогатная функция потерь",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E39",
+      "label": "Инверсия предсказаний",
+      "members": [
+        "E39"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Инверсия предсказаний",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E40",
+      "label": "Неуверенное предсказание",
+      "members": [
+        "E40"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Неуверенное предсказание",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E41",
+      "label": "Отказ от классификации",
+      "members": [
+        "E41"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Отказ от классификации",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E42",
+      "label": "Ошибка перцептрона",
+      "members": [
+        "E42"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Ошибка перцептрона",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E43",
+      "label": "Функция `F(M) = max(0, -M)`",
+      "members": [
+        "E43"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Функция `F(M) = max(0, -M)`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E44",
+      "label": "Неправильно классифицированные объекты",
+      "members": [
+        "E44"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Неправильно классифицированные объекты",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E45",
+      "label": "Линейный штраф по размеру отрицательного отступа",
+      "members": [
+        "E45"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Линейный штраф по размеру отрицательного отступа",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E46",
+      "label": "`L2`-регуляризация",
+      "members": [
+        "E46"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "`L2`-регуляризация",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E47",
+      "label": "Регуляризованный лосс перцептрона",
+      "members": [
+        "E47"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Регуляризованный лосс перцептрона",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E48",
+      "label": "Градиент лосса перцептрона",
+      "members": [
+        "E48"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Градиент лосса перцептрона",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E49",
+      "label": "Стохастический градиентный спуск",
+      "members": [
+        "E49"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Стохастический градиентный спуск",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E50",
+      "label": "Перцептрон Розенблатта",
+      "members": [
+        "E50"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Перцептрон Розенблатта",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E51",
+      "label": "Первая вычислительная модель нейросети",
+      "members": [
+        "E51"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Первая вычислительная модель нейросети",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E52",
+      "label": "Глубокое обучение",
+      "members": [
+        "E52"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Глубокое обучение",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E53",
+      "label": "Неединственность решения",
+      "members": [
+        "E53"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Неединственность решения",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E54",
+      "label": "Зависимость от начальных параметров",
+      "members": [
+        "E54"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Зависимость от начальных параметров",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E55",
+      "label": "Нулевой лосс",
+      "members": [
+        "E55"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Нулевой лосс",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E56",
+      "label": "Hinge loss",
+      "members": [
+        "E56"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Hinge loss",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E57",
+      "label": "Функция `F(M) = max(0, 1 - M)`",
+      "members": [
+        "E57"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Функция `F(M) = max(0, 1 - M)`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E58",
+      "label": "Регуляризованный hinge-лосс",
+      "members": [
+        "E58"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Регуляризованный hinge-лосс",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E59",
+      "label": "Градиент hinge-лосса",
+      "members": [
+        "E59"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Градиент hinge-лосса",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E60",
+      "label": "Максимизация минимального отступа",
+      "members": [
+        "E60"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Максимизация минимального отступа",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E61",
+      "label": "Минимальный отступ",
+      "members": [
+        "E61"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Минимальный отступ",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E62",
+      "label": "Разделяющая полоса",
+      "members": [
+        "E62"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Разделяющая полоса",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E63",
+      "label": "Ширина полосы `2 /||w||_2`",
+      "members": [
+        "E63"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Ширина полосы `2 /||w||_2`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E64",
+      "label": "Штраф за нарушение разделяющей полосы",
+      "members": [
+        "E64"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Штраф за нарушение разделяющей полосы",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E65",
+      "label": "Правильно классифицированные, но неуверенные объекты",
+      "members": [
+        "E65"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Правильно классифицированные, но неуверенные объекты",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E66",
+      "label": "Отодвигание разделяющей плоскости",
+      "members": [
+        "E66"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Отодвигание разделяющей плоскости",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E67",
+      "label": "Опорные векторы",
+      "members": [
+        "E67"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Опорные векторы",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E68",
+      "label": "Метод опорных векторов / SVM",
+      "members": [
+        "E68"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Метод опорных векторов / SVM",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E69",
+      "label": "Небольшое количество параметров",
+      "members": [
+        "E69"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Небольшое количество параметров",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E70",
+      "label": "Доказуемая оптимальность",
+      "members": [
+        "E70"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Доказуемая оптимальность",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E71",
+      "label": "Уникальное решение",
+      "members": [
+        "E71"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Уникальное решение",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E72",
+      "label": "Минимальная склонность к переобучению",
+      "members": [
+        "E72"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Минимальная склонность к переобучению",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E73",
+      "label": "Ядровый SVM",
+      "members": [
+        "E73"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Ядровый SVM",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E74",
+      "label": "Нелинейная разделяющая поверхность",
+      "members": [
+        "E74"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Нелинейная разделяющая поверхность",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E75",
+      "label": "Методы на деревьях решений",
+      "members": [
+        "E75"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Методы на деревьях решений",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E76",
+      "label": "Нейросети",
+      "members": [
+        "E76"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Нейросети",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E77",
+      "label": "Логистическая регрессия",
+      "members": [
+        "E77"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Логистическая регрессия",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E78",
+      "label": "Классы `0` и `1`",
+      "members": [
+        "E78"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Классы `0` и `1`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E79",
+      "label": "Классификация как предсказание вероятностей",
+      "members": [
+        "E79"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Классификация как предсказание вероятностей",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E80",
+      "label": "Предсказание кликов",
+      "members": [
+        "E80"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Предсказание кликов",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E81",
+      "label": "Клик пользователя",
+      "members": [
+        "E81"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Клик пользователя",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E82",
+      "label": "Кликабельность объекта",
+      "members": [
+        "E82"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Кликабельность объекта",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E83",
+      "label": "Истинная вероятность клика",
+      "members": [
+        "E83"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Истинная вероятность клика",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E84",
+      "label": "Случайная величина Бернулли",
+      "members": [
+        "E84"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Случайная величина Бернулли",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E85",
+      "label": "Вероятность `p`",
+      "members": [
+        "E85"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Вероятность `p`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E86",
+      "label": "Диапазон вероятности `[0, 1]`",
+      "members": [
+        "E86"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Диапазон вероятности `[0, 1]`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E87",
+      "label": "Неограниченный диапазон `(-∞, ∞)`",
+      "members": [
+        "E87"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Неограниченный диапазон `(-∞, ∞)`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E88",
+      "label": "Logit / log odds",
+      "members": [
+        "E88"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Logit / log odds",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E89",
+      "label": "Формула `log(p / (1 - p))`",
+      "members": [
+        "E89"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Формула `log(p / (1 - p))`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E90",
+      "label": "Сигмоида `σ(z) = 1 / (1 + e^{-z})`",
+      "members": [
+        "E90"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Сигмоида `σ(z) = 1 / (1 + e^{-z})`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E91",
+      "label": "Вероятность положительного класса `p = σ(⟨w, x_i⟩)`",
+      "members": [
+        "E91"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Вероятность положительного класса `p = σ(⟨w, x_i⟩)`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E92",
+      "label": "Метод максимума правдоподобия",
+      "members": [
+        "E92"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Метод максимума правдоподобия",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E93",
+      "label": "Распределение Бернулли",
+      "members": [
+        "E93"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Распределение Бернулли",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E94",
+      "label": "Правдоподобие `p(y|X, w)`",
+      "members": [
+        "E94"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Правдоподобие `p(y|X, w)`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E95",
+      "label": "Логарифмическое правдоподобие",
+      "members": [
+        "E95"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Логарифмическое правдоподобие",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E96",
+      "label": "Negative log-likelihood / логистический лосс",
+      "members": [
+        "E96"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Negative log-likelihood / логистический лосс",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E97",
+      "label": "Градиент логистического лосса",
+      "members": [
+        "E97"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Градиент логистического лосса",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E98",
+      "label": "Градиентный спуск",
+      "members": [
+        "E98"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Градиентный спуск",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E99",
+      "label": "Отсутствие явной формулы решения",
+      "members": [
+        "E99"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Отсутствие явной формулы решения",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E100",
+      "label": "Порог классификации",
+      "members": [
+        "E100"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Порог классификации",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E101",
+      "label": "Порог `0.5`",
+      "members": [
+        "E101"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Порог `0.5`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E102",
+      "label": "Отложенная тестовая выборка",
+      "members": [
+        "E102"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Отложенная тестовая выборка",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E103",
+      "label": "Целевая метрика",
+      "members": [
+        "E103"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Целевая метрика",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E104",
+      "label": "Доля положительных и отрицательных классов",
+      "members": [
+        "E104"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Доля положительных и отрицательных классов",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E105",
+      "label": "Логиты как вещественные числа",
+      "members": [
+        "E105"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Логиты как вещественные числа",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E106",
+      "label": "Компактный логистический лосс для меток `±1`",
+      "members": [
+        "E106"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Компактный логистический лосс для меток `±1`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E107",
+      "label": "Разделяющая поверхность логистической регрессии",
+      "members": [
+        "E107"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Разделяющая поверхность логистической регрессии",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E108",
+      "label": "Гиперплоскость `⟨w, x⟩ = 0`",
+      "members": [
+        "E108"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Гиперплоскость `⟨w, x⟩ = 0`",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "E109",
+      "label": "Калибровка классификаторов",
+      "members": [
+        "E109"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Калибровка классификаторов",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_0",
+      "label": "⟨w, x_i⟩",
+      "members": [
+        "lit_0"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "⟨w, x_i⟩",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_1",
+      "label": "sign⟨w, x_i⟩",
+      "members": [
+        "lit_1"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "sign⟨w, x_i⟩",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_2",
+      "label": "y_i⟨w, x_i⟩",
+      "members": [
+        "lit_2"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "y_i⟨w, x_i⟩",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_3",
+      "label": "правильную классификацию",
+      "members": [
+        "lit_3"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "правильную классификацию",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_4",
+      "label": "неправильную классификацию",
+      "members": [
+        "lit_4"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "неправильную классификацию",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_5",
+      "label": "сильную ошибку классификатора",
+      "members": [
+        "lit_5"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "сильную ошибку классификатора",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_6",
+      "label": "долю неверно классифицированных объектов",
+      "members": [
+        "lit_6"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "долю неверно классифицированных объектов",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_7",
+      "label": "max(0, -M)",
+      "members": [
+        "lit_7"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "max(0, -M)",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_8",
+      "label": "λ||w||² + Σ max(0, -y_i⟨w, x_i⟩)",
+      "members": [
+        "lit_8"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "λ||w||² + Σ max(0, -y_i⟨w, x_i⟩)",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_9",
+      "label": "max(0, 1 - M)",
+      "members": [
+        "lit_9"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "max(0, 1 - M)",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_10",
+      "label": "λ||w||² + Σ max(0, 1 - y_i⟨w, x_i⟩)",
+      "members": [
+        "lit_10"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "λ||w||² + Σ max(0, 1 - y_i⟨w, x_i⟩)",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_11",
+      "label": "0 ≤ y_i⟨w, x_i⟩ < 1",
+      "members": [
+        "lit_11"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "0 ≤ y_i⟨w, x_i⟩ < 1",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_12",
+      "label": "2 / ||w||₂",
+      "members": [
+        "lit_12"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "2 / ||w||₂",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_13",
+      "label": "σ(⟨w, x_i⟩)",
+      "members": [
+        "lit_13"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "σ(⟨w, x_i⟩)",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_14",
+      "label": "X, w",
+      "members": [
+        "lit_14"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "X, w",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_15",
+      "label": "p(y_i | x_i, w)",
+      "members": [
+        "lit_15"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "p(y_i | x_i, w)",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_16",
+      "label": "Π p_i^{y_i}(1-p_i)^{1-y_i}",
+      "members": [
+        "lit_16"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Π p_i^{y_i}(1-p_i)^{1-y_i}",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_17",
+      "label": "-Σ x_i(y_i - σ(⟨w, x_i⟩))",
+      "members": [
+        "lit_17"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "-Σ x_i(y_i - σ(⟨w, x_i⟩))",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_18",
+      "label": "класс",
+      "members": [
+        "lit_18"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "класс",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_19",
+      "label": "классы",
+      "members": [
+        "lit_19"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "классы",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_20",
+      "label": "Σ log(1 + exp(-y_i⟨w, x_i⟩))",
+      "members": [
+        "lit_20"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Σ log(1 + exp(-y_i⟨w, x_i⟩))",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_21",
+      "label": "класс 0 / -1",
+      "members": [
+        "lit_21"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "класс 0 / -1",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_22",
+      "label": "класс 1",
+      "members": [
+        "lit_22"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "класс 1",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_23",
+      "label": "p = 1/2",
+      "members": [
+        "lit_23"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "p = 1/2",
+          "chunk_id": "graph.md"
+        }
+      ]
+    },
+    {
+      "id": "lit_24",
+      "label": "⟨w, x⟩ = 0",
+      "members": [
+        "lit_24"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "⟨w, x⟩ = 0",
+          "chunk_id": "graph.md"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "R1",
+      "source": "E02",
+      "target": "E01",
+      "label": "является частным случаем",
+      "members": [
+        "R1"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R2",
+      "source": "E03",
+      "target": "E02",
+      "label": "является обобщением",
+      "members": [
+        "R2"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R3",
+      "source": "E06",
+      "target": "E09",
+      "label": "кодирует принадлежность к",
+      "members": [
+        "R3"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R4",
+      "source": "E06",
+      "target": "E10",
+      "label": "кодирует принадлежность к",
+      "members": [
+        "R4"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R5",
+      "source": "E07",
+      "target": "E09",
+      "label": "используется для кодирования",
+      "members": [
+        "R5"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R6",
+      "source": "E07",
+      "target": "E10",
+      "label": "используется для кодирования",
+      "members": [
+        "R6"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R7",
+      "source": "E08",
+      "target": "E09",
+      "label": "альтернативно используется для кодирования",
+      "members": [
+        "R7"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R8",
+      "source": "E08",
+      "target": "E10",
+      "label": "альтернативно используется для кодирования",
+      "members": [
+        "R8"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R9",
+      "source": "E04",
+      "target": "E05",
+      "label": "принадлежит",
+      "members": [
+        "R9"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R10",
+      "source": "E11",
+      "target": "E01",
+      "label": "обучается для решения",
+      "members": [
+        "R10"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R11",
+      "source": "E11",
+      "target": "E12",
+      "label": "задаётся",
+      "members": [
+        "R11"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R12",
+      "source": "E11",
+      "target": "E13",
+      "label": "вычисляет",
+      "members": [
+        "R12"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R13",
+      "source": "E13",
+      "target": "lit_0",
+      "label": "равен",
+      "members": [
+        "R13"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R14",
+      "source": "E12",
+      "target": "E14",
+      "label": "задаёт",
+      "members": [
+        "R14"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R15",
+      "source": "E14",
+      "target": "E17",
+      "label": "отделяет",
+      "members": [
+        "R15"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R16",
+      "source": "E14",
+      "target": "E18",
+      "label": "отделяет",
+      "members": [
+        "R16"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R17",
+      "source": "E15",
+      "target": "lit_1",
+      "label": "вычисляется как",
+      "members": [
+        "R17"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R18",
+      "source": "E15",
+      "target": "E13",
+      "label": "использует",
+      "members": [
+        "R18"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R19",
+      "source": "E16",
+      "target": "E14",
+      "label": "означает существование",
+      "members": [
+        "R19"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R20",
+      "source": "E16",
+      "target": "E09",
+      "label": "требует, чтобы",
+      "members": [
+        "R20"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R21",
+      "source": "E16",
+      "target": "E10",
+      "label": "требует, чтобы",
+      "members": [
+        "R21"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R22",
+      "source": "E19",
+      "target": "E07",
+      "label": "пытается предсказывать",
+      "members": [
+        "R22"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R23",
+      "source": "E19",
+      "target": "E20",
+      "label": "может минимизировать",
+      "members": [
+        "R23"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R24",
+      "source": "E19",
+      "target": "E21",
+      "label": "использует после обучения",
+      "members": [
+        "R24"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R25",
+      "source": "E20",
+      "target": "E22",
+      "label": "плохо штрафует",
+      "members": [
+        "R25"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R26",
+      "source": "E19",
+      "target": "E23",
+      "label": "ошибочно учитывает",
+      "members": [
+        "R26"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R27",
+      "source": "E23",
+      "target": "E19",
+      "label": "означает, что предсказание 5 вместо 1 считается ошибкой",
+      "members": [
+        "R27"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R28",
+      "source": "E01",
+      "target": "E24",
+      "label": "нуждается в",
+      "members": [
+        "R28"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R29",
+      "source": "E01",
+      "target": "E25",
+      "label": "не нуждается в",
+      "members": [
+        "R29"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R30",
+      "source": "E26",
+      "target": "E27",
+      "label": "формализуется через",
+      "members": [
+        "R30"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R31",
+      "source": "E27",
+      "target": "E28",
+      "label": "эквивалентен",
+      "members": [
+        "R31"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R32",
+      "source": "E28",
+      "target": "E29",
+      "label": "использует",
+      "members": [
+        "R32"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R33",
+      "source": "E29",
+      "target": "lit_2",
+      "label": "равен",
+      "members": [
+        "R33"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R34",
+      "source": "E29",
+      "target": "E06",
+      "label": "зависит от",
+      "members": [
+        "R34"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R35",
+      "source": "E29",
+      "target": "E13",
+      "label": "зависит от",
+      "members": [
+        "R35"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R36",
+      "source": "E30",
+      "target": "E29",
+      "label": "является случаем",
+      "members": [
+        "R36"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R37",
+      "source": "E31",
+      "target": "E29",
+      "label": "является случаем",
+      "members": [
+        "R37"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R38",
+      "source": "E30",
+      "target": "lit_3",
+      "label": "означает",
+      "members": [
+        "R38"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R39",
+      "source": "E31",
+      "target": "lit_4",
+      "label": "означает",
+      "members": [
+        "R39"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R40",
+      "source": "E30",
+      "target": "E32",
+      "label": "увеличивает",
+      "members": [
+        "R40"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R41",
+      "source": "E30",
+      "target": "E33",
+      "label": "связан с большим",
+      "members": [
+        "R41"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R42",
+      "source": "E31",
+      "target": "lit_5",
+      "label": "при большом модуле означает",
+      "members": [
+        "R42"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R43",
+      "source": "E34",
+      "target": "lit_6",
+      "label": "показывает",
+      "members": [
+        "R43"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R44",
+      "source": "E34",
+      "target": "E35",
+      "label": "строится из",
+      "members": [
+        "R44"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R45",
+      "source": "E35",
+      "target": "E31",
+      "label": "равна 1 при",
+      "members": [
+        "R45"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R46",
+      "source": "E35",
+      "target": "E30",
+      "label": "равна 0 при",
+      "members": [
+        "R46"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R47",
+      "source": "E35",
+      "target": "E36",
+      "label": "является",
+      "members": [
+        "R47"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R48",
+      "source": "E36",
+      "target": "E37",
+      "label": "неудобна для",
+      "members": [
+        "R48"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R49",
+      "source": "E36",
+      "target": "E37",
+      "label": "имеет нулевую производную почти везде",
+      "members": [
+        "R49"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R50",
+      "source": "E38",
+      "target": "E35",
+      "label": "мажорирует",
+      "members": [
+        "R50"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R51",
+      "source": "E38",
+      "target": "E37",
+      "label": "позволяет использовать",
+      "members": [
+        "R51"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R52",
+      "source": "E31",
+      "target": "E39",
+      "label": "если встречается у большинства объектов, может быть исправлен через",
+      "members": [
+        "R52"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R53",
+      "source": "E39",
+      "target": "E15",
+      "label": "заменяет предсказанные классы на противоположные",
+      "members": [
+        "R53"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R54",
+      "source": "E32",
+      "target": "E11",
+      "label": "не всегда означает лучшее качество",
+      "members": [
+        "R54"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R55",
+      "source": "E40",
+      "target": "E32",
+      "label": "может быть предпочтительнее ложной уверенности",
+      "members": [
+        "R55"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R56",
+      "source": "E41",
+      "target": "E01",
+      "label": "может быть полезным поведением модели",
+      "members": [
+        "R56"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R57",
+      "source": "E42",
+      "target": "E43",
+      "label": "использует функцию",
+      "members": [
+        "R57"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R58",
+      "source": "E43",
+      "target": "lit_7",
+      "label": "равна",
+      "members": [
+        "R58"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R59",
+      "source": "E42",
+      "target": "E44",
+      "label": "учитывает только",
+      "members": [
+        "R59"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R60",
+      "source": "E42",
+      "target": "E45",
+      "label": "штрафует",
+      "members": [
+        "R60"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R61",
+      "source": "E45",
+      "target": "E31",
+      "label": "пропорционален размеру",
+      "members": [
+        "R61"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R62",
+      "source": "E47",
+      "target": "E46",
+      "label": "состоит из",
+      "members": [
+        "R62"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R63",
+      "source": "E47",
+      "target": "E43",
+      "label": "состоит из",
+      "members": [
+        "R63"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R64",
+      "source": "E46",
+      "target": "E12",
+      "label": "штрафует норму",
+      "members": [
+        "R64"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R65",
+      "source": "E47",
+      "target": "lit_8",
+      "label": "имеет вид",
+      "members": [
+        "R65"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R66",
+      "source": "E48",
+      "target": "E47",
+      "label": "является градиентом",
+      "members": [
+        "R66"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R67",
+      "source": "E48",
+      "target": "E47",
+      "label": "равен регуляризационной части плюс вклад ошибочных объектов",
+      "members": [
+        "R67"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R68",
+      "source": "E48",
+      "target": "E49",
+      "label": "позволяет применять",
+      "members": [
+        "R68"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R69",
+      "source": "E49",
+      "target": "E47",
+      "label": "оптимизирует",
+      "members": [
+        "R69"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R70",
+      "source": "E42",
+      "target": "E50",
+      "label": "была предложена для",
+      "members": [
+        "R70"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R71",
+      "source": "E50",
+      "target": "E51",
+      "label": "является",
+      "members": [
+        "R71"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R72",
+      "source": "E51",
+      "target": "E52",
+      "label": "исторически привела к",
+      "members": [
+        "R72"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R73",
+      "source": "E42",
+      "target": "E02",
+      "label": "решает",
+      "members": [
+        "R73"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R74",
+      "source": "E42",
+      "target": "E53",
+      "label": "имеет проблему",
+      "members": [
+        "R74"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R75",
+      "source": "E53",
+      "target": "E54",
+      "label": "проявляется как",
+      "members": [
+        "R75"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R76",
+      "source": "E55",
+      "target": "E42",
+      "label": "может достигаться несколькими разными классификаторами",
+      "members": [
+        "R76"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R77",
+      "source": "E53",
+      "target": "E60",
+      "label": "мотивирует переход к",
+      "members": [
+        "R77"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R78",
+      "source": "E60",
+      "target": "E61",
+      "label": "стремится максимизировать",
+      "members": [
+        "R78"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R79",
+      "source": "E60",
+      "target": "E56",
+      "label": "реализуется через",
+      "members": [
+        "R79"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R80",
+      "source": "E56",
+      "target": "E57",
+      "label": "использует функцию",
+      "members": [
+        "R80"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R81",
+      "source": "E57",
+      "target": "lit_9",
+      "label": "равна",
+      "members": [
+        "R81"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R82",
+      "source": "E58",
+      "target": "E46",
+      "label": "состоит из",
+      "members": [
+        "R82"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R83",
+      "source": "E58",
+      "target": "E57",
+      "label": "состоит из",
+      "members": [
+        "R83"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R84",
+      "source": "E58",
+      "target": "lit_10",
+      "label": "имеет вид",
+      "members": [
+        "R84"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R85",
+      "source": "E59",
+      "target": "E58",
+      "label": "является градиентом",
+      "members": [
+        "R85"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R86",
+      "source": "E65",
+      "target": "lit_11",
+      "label": "имеют отступ в диапазоне",
+      "members": [
+        "R86"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R87",
+      "source": "E65",
+      "target": "E59",
+      "label": "продолжают вносить вклад в",
+      "members": [
+        "R87"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R88",
+      "source": "E65",
+      "target": "E66",
+      "label": "пытаются выполнить",
+      "members": [
+        "R88"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R89",
+      "source": "E66",
+      "target": "E61",
+      "label": "увеличивает",
+      "members": [
+        "R89"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R90",
+      "source": "E60",
+      "target": "E63",
+      "label": "эквивалентна максимизации",
+      "members": [
+        "R90"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R91",
+      "source": "E63",
+      "target": "lit_12",
+      "label": "равна",
+      "members": [
+        "R91"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R92",
+      "source": "E46",
+      "target": "E63",
+      "label": "обратно пропорциональна",
+      "members": [
+        "R92"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R93",
+      "source": "E64",
+      "target": "E62",
+      "label": "штрафует объекты, расположенные неправильно относительно",
+      "members": [
+        "R93"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R94",
+      "source": "E58",
+      "target": "E64",
+      "label": "учитывает",
+      "members": [
+        "R94"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R95",
+      "source": "E58",
+      "target": "E16",
+      "label": "допускает ошибки, потому что классы могут быть не",
+      "members": [
+        "R95"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R96",
+      "source": "E68",
+      "target": "E56",
+      "label": "использует",
+      "members": [
+        "R96"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R97",
+      "source": "E68",
+      "target": "E60",
+      "label": "реализует принцип",
+      "members": [
+        "R97"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R98",
+      "source": "E68",
+      "target": "E14",
+      "label": "строит",
+      "members": [
+        "R98"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R99",
+      "source": "E14",
+      "target": "E67",
+      "label": "итоговое положение задаётся",
+      "members": [
+        "R99"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R100",
+      "source": "E67",
+      "target": "E14",
+      "label": "являются ближайшими правильно классифицированными объектами к",
+      "members": [
+        "R100"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R101",
+      "source": "E68",
+      "target": "E69",
+      "label": "имеет свойство",
+      "members": [
+        "R101"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R102",
+      "source": "E68",
+      "target": "E70",
+      "label": "имеет свойство",
+      "members": [
+        "R102"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R103",
+      "source": "E68",
+      "target": "E71",
+      "label": "имеет свойство",
+      "members": [
+        "R103"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R104",
+      "source": "E68",
+      "target": "E72",
+      "label": "имеет свойство",
+      "members": [
+        "R104"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R105",
+      "source": "E68",
+      "target": "E75",
+      "label": "исторически был сильнейшим методом до",
+      "members": [
+        "R105"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R106",
+      "source": "E75",
+      "target": "E76",
+      "label": "позже уступили первенство",
+      "members": [
+        "R106"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R107",
+      "source": "E73",
+      "target": "E68",
+      "label": "является модификацией",
+      "members": [
+        "R107"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R108",
+      "source": "E73",
+      "target": "E74",
+      "label": "позволяет строить",
+      "members": [
+        "R108"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R109",
+      "source": "E77",
+      "target": "E78",
+      "label": "использует кодировку классов",
+      "members": [
+        "R109"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R110",
+      "source": "E77",
+      "target": "E79",
+      "label": "возникает из идеи",
+      "members": [
+        "R110"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R111",
+      "source": "E80",
+      "target": "E79",
+      "label": "является примером задачи для",
+      "members": [
+        "R111"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R112",
+      "source": "E81",
+      "target": "E84",
+      "label": "является реализацией",
+      "members": [
+        "R112"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R113",
+      "source": "E82",
+      "target": "E83",
+      "label": "интерпретируется как",
+      "members": [
+        "R113"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R114",
+      "source": "E83",
+      "target": "E85",
+      "label": "является",
+      "members": [
+        "R114"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R115",
+      "source": "E85",
+      "target": "E86",
+      "label": "лежит в диапазоне",
+      "members": [
+        "R115"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R116",
+      "source": "E11",
+      "target": "E87",
+      "label": "естественно выдаёт значения из",
+      "members": [
+        "R116"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R117",
+      "source": "E86",
+      "target": "E11",
+      "label": "создаёт проблему для прямого обучения",
+      "members": [
+        "R117"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R118",
+      "source": "E88",
+      "target": "E85",
+      "label": "связан с вероятностью",
+      "members": [
+        "R118"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R119",
+      "source": "E88",
+      "target": "E87",
+      "label": "имеет диапазон",
+      "members": [
+        "R119"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R120",
+      "source": "E88",
+      "target": "E89",
+      "label": "задаётся формулой",
+      "members": [
+        "R120"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R121",
+      "source": "E13",
+      "target": "E88",
+      "label": "интерпретируется как",
+      "members": [
+        "R121"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R122",
+      "source": "E90",
+      "target": "E87",
+      "label": "преобразует",
+      "members": [
+        "R122"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R123",
+      "source": "E91",
+      "target": "E90",
+      "label": "вычисляется через",
+      "members": [
+        "R123"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R124",
+      "source": "E91",
+      "target": "lit_13",
+      "label": "равна",
+      "members": [
+        "R124"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R125",
+      "source": "E91",
+      "target": "E09",
+      "label": "является вероятностью",
+      "members": [
+        "R125"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R126",
+      "source": "E77",
+      "target": "E92",
+      "label": "обучается через",
+      "members": [
+        "R126"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R127",
+      "source": "E92",
+      "target": "E93",
+      "label": "применяется к",
+      "members": [
+        "R127"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R128",
+      "source": "E93",
+      "target": "E81",
+      "label": "моделирует",
+      "members": [
+        "R128"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R129",
+      "source": "E94",
+      "target": "lit_14",
+      "label": "измеряет вероятность таргетов при заданных",
+      "members": [
+        "R129"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R130",
+      "source": "E94",
+      "target": "lit_15",
+      "label": "факторизуется по объектам",
+      "members": [
+        "R130"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R131",
+      "source": "E94",
+      "target": "lit_16",
+      "label": "для Бернулли имеет вид",
+      "members": [
+        "R131"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R132",
+      "source": "E95",
+      "target": "E94",
+      "label": "получается из",
+      "members": [
+        "R132"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R133",
+      "source": "E95",
+      "target": "E94",
+      "label": "заменяет произведение на сумму",
+      "members": [
+        "R133"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R134",
+      "source": "E96",
+      "target": "E95",
+      "label": "получается как минус",
+      "members": [
+        "R134"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R135",
+      "source": "E96",
+      "target": "E95",
+      "label": "минимизируется вместо максимизации",
+      "members": [
+        "R135"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R136",
+      "source": "E96",
+      "target": "E77",
+      "label": "является функцией потерь для",
+      "members": [
+        "R136"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R137",
+      "source": "E77",
+      "target": "E99",
+      "label": "не имеет",
+      "members": [
+        "R137"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R138",
+      "source": "E77",
+      "target": "E98",
+      "label": "поэтому оптимизируется через",
+      "members": [
+        "R138"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R139",
+      "source": "E97",
+      "target": "E96",
+      "label": "является градиентом",
+      "members": [
+        "R139"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R140",
+      "source": "E97",
+      "target": "lit_17",
+      "label": "имеет вид",
+      "members": [
+        "R140"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R141",
+      "source": "E98",
+      "target": "E97",
+      "label": "использует",
+      "members": [
+        "R141"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R142",
+      "source": "E77",
+      "target": "E91",
+      "label": "предсказывает",
+      "members": [
+        "R142"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R143",
+      "source": "E91",
+      "target": "lit_18",
+      "label": "требует преобразования в",
+      "members": [
+        "R143"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R144",
+      "source": "E100",
+      "target": "lit_18",
+      "label": "преобразует вероятность в",
+      "members": [
+        "R144"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R145",
+      "source": "E101",
+      "target": "E100",
+      "label": "является интуитивным, но не всегда правильным выбором",
+      "members": [
+        "R145"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R146",
+      "source": "E100",
+      "target": "E102",
+      "label": "лучше подбирать на",
+      "members": [
+        "R146"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R147",
+      "source": "E100",
+      "target": "E103",
+      "label": "подбирается для оптимизации",
+      "members": [
+        "R147"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R148",
+      "source": "E100",
+      "target": "E104",
+      "label": "может подбираться так, чтобы совпадала",
+      "members": [
+        "R148"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R149",
+      "source": "E77",
+      "target": "E105",
+      "label": "называется регрессией, потому что предсказывает",
+      "members": [
+        "R149"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R150",
+      "source": "E77",
+      "target": "lit_19",
+      "label": "не напрямую предсказывает",
+      "members": [
+        "R150"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R151",
+      "source": "E106",
+      "target": "E07",
+      "label": "является формой логистического лосса при метках",
+      "members": [
+        "R151"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R152",
+      "source": "E106",
+      "target": "lit_20",
+      "label": "имеет вид",
+      "members": [
+        "R152"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R153",
+      "source": "E107",
+      "target": "lit_21",
+      "label": "отделяет",
+      "members": [
+        "R153"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R154",
+      "source": "E107",
+      "target": "lit_22",
+      "label": "отделяет",
+      "members": [
+        "R154"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R155",
+      "source": "E107",
+      "target": "E100",
+      "label": "зависит от выбранного",
+      "members": [
+        "R155"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R156",
+      "source": "E101",
+      "target": "lit_23",
+      "label": "задаёт условие",
+      "members": [
+        "R156"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R157",
+      "source": "lit_23",
+      "target": "lit_24",
+      "label": "эквивалентно",
+      "members": [
+        "R157"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R158",
+      "source": "E108",
+      "target": "E107",
+      "label": "является",
+      "members": [
+        "R158"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "R159",
+      "source": "E109",
+      "target": "E91",
+      "label": "уточняет интерпретацию",
+      "members": [
+        "R159"
+      ],
+      "size": 1,
+      "embedding": []
+    }
+  ]
+}

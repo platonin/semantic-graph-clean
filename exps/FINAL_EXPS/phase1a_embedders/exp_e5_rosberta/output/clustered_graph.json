@@ -1,0 +1,4049 @@
+{
+  "meta": {
+    "created_at": "2026-05-07T12:34:12.983527+00:00",
+    "source_text": "# Линейная классификация\n\nТеперь давайте поговорим про задачу классификации. Для начала будем говорить про бинарную классификацию на два класса. Обобщить эту задачу до задачи классификации на $K$ классов не составит большого труда.\n\nПусть теперь наши таргеты $y$ кодируют принадлежность к положительному или отрицательному классу, то есть принадлежность множеству $\\{-1,1\\}$, а $x$ — по-прежнему векторы из $\\mathbb{R}^D$.\n\nВ этом параграфе договоримся именно так обозначать классы, хотя в жизни вам ",
+    "pipeline_version": "0.2.0",
+    "config_summary": {
+      "clustering_method": "agglomerative",
+      "threshold": 0.6111111111111112,
+      "n_clusters": null,
+      "raw_nodes": 335,
+      "raw_edges": 322
+    },
+    "stats": {
+      "nodes": 32,
+      "edges": 68
+    }
+  },
+  "nodes": [
+    {
+      "id": "c0",
+      "label": "отступ",
+      "members": [
+        "n12",
+        "n16",
+        "n51",
+        "n52",
+        "n53",
+        "n54",
+        "n55",
+        "n56",
+        "n58",
+        "n59",
+        "n60",
+        "n61",
+        "n62",
+        "n63",
+        "n64",
+        "n76",
+        "n103",
+        "n104",
+        "n105",
+        "n106",
+        "n107",
+        "n114",
+        "n118",
+        "n119",
+        "n120",
+        "n121",
+        "n134"
+      ],
+      "size": 27,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "классы",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "классы",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "классы",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "классы",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "классы",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "классы",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "классы",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "классы",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "классы",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "нам",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "нам",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "нам",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "нам",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "величина M",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "величина M",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "отступ",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "отступ",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "отступ",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "отступ",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "отступ",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "отступ",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "отступ",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "отступ",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "отступ",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "отступы",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "отступы",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "отступы",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "отступы",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "margin",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "y_i ⟨ w, x_i ⟩",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "M",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "классификатор",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "классификатор",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "классификатор",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "классификатор",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "классификаторы",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "классификаторы",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "классификатор",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "доля неверно классифицированных объектов",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "misclassification loss",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "когда класс угадан верно",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "когда расстояние до разделяющей гиперплоскости больше",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "когда ошибка классификатора более сокрушительна",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "функция F",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "функция F",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "функция F",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "когда M меньше 0",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "задача",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "задача",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "задача",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "задача",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "задача",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "задача",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "задача",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "ошибка перцептрона",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "идея",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "идея",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "идея",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "неправильно классифицированные объекты",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "размер отступов",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "max(0,-M)",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "задача линейной классификации",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "задача линейной классификации",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "она",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "она",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "решение не единственно",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "все",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "одинаковый ну",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "объект",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "объект",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "объект",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "объект",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "объекты",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "объект",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "объект",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "объект",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "объект",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "объект",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "объект",
+          "chunk_id": "chunk_34"
+        }
+      ]
+    },
+    {
+      "id": "c1",
+      "label": "вещественный число",
+      "members": [
+        "n247",
+        "n248",
+        "n311",
+        "n312",
+        "n313",
+        "n314",
+        "n315",
+        "n316"
+      ],
+      "size": 8,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "логиты",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "логиты",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "метод максимума правдоподобия",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "доля отрицательных классов",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "реальная доля",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "логистическая классификация",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "причина названия",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "предсказываем не классы",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "вещественные числа",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "вещественные числа",
+          "chunk_id": "chunk_49"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "label": "вероятность",
+      "members": [
+        "n227",
+        "n232",
+        "n233",
+        "n234",
+        "n235",
+        "n236",
+        "n237",
+        "n238",
+        "n240",
+        "n241",
+        "n242",
+        "n244",
+        "n245",
+        "n254",
+        "n255",
+        "n256",
+        "n257",
+        "n258",
+        "n259",
+        "n260",
+        "n261",
+        "n262",
+        "n263",
+        "n264",
+        "n265",
+        "n266",
+        "n267",
+        "n268",
+        "n269",
+        "n270",
+        "n271",
+        "n272",
+        "n273",
+        "n274"
+      ],
+      "size": 34,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "ответы модели",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "ответ модели",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "ответы модели",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "logit",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "logit",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "логарифм отношения вероятности положительного события к отрицательному",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "логарифм отношения вероятности положительного события к отрицательному",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "log odds",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "log(p/(1-p))",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "log(p/(1-p))",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "⟨w,x_i⟩",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "формула 1/(1+e^(-⟨w,x_i⟩))",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "p",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "p",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "p",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "p",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "p",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "p",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "1/(1+e^(-⟨w,x_i⟩))",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "правая часть",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "σ(z)",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "σ(z)",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "1/(1+e^(-z))",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "орёл",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "клик пользователя на объект",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "теоретический минимум",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "правдоподобие",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "правдоподобие",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "правдоподобие",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "правдоподобие",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "правдоподобие",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "вероятность получения данных",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "вероятность получения данных",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "вероятность получения данных",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "вероятность получения данных",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "значения таргета y",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "значения таргета y",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "значения таргета y",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "данные X",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "данные X",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "веса w",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "веса w",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "p(y | X,w)",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "p(y | X,w)",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "p(y",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "равен | произведение по i от p(y_i | x_i,w)",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "правдоподобие для распределения Бернулли",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "p_i",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "оптимизация произведения",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "неудобной",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "неудобное",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "произведение",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "произведение",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "логарифмическое правдоподобие",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "логарифмическое правдоподобие",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "формула для вероятности",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "формула для вероятности",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "выше",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "слагаемое",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "y_i * log(p_i) + (1 - y_i) * log(1 - p_i)",
+          "chunk_id": "chunk_42"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "label": "тут",
+      "members": [
+        "n164",
+        "n191",
+        "n192",
+        "n193",
+        "n194",
+        "n195",
+        "n196",
+        "n197",
+        "n198",
+        "n199",
+        "n200",
+        "n201",
+        "n202"
+      ],
+      "size": 13,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "SVM",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "SVM",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "SVM",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "SVM",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "SVM",
+          "chunk_id": "chunk_30"
+        },
+        {
+          "text": "SVM",
+          "chunk_id": "chunk_30"
+        },
+        {
+          "text": "SVM",
+          "chunk_id": "chunk_30"
+        },
+        {
+          "text": "SVM",
+          "chunk_id": "chunk_30"
+        },
+        {
+          "text": "SVM",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "гарантированно работать в любой ситуации",
+          "chunk_id": "chunk_30"
+        },
+        {
+          "text": "существование уникального решения",
+          "chunk_id": "chunk_30"
+        },
+        {
+          "text": "доказуемо минимальная склонность к переобучению",
+          "chunk_id": "chunk_30"
+        },
+        {
+          "text": "склонность к переобучению",
+          "chunk_id": "chunk_30"
+        },
+        {
+          "text": "популярные классы линейных классификаторов",
+          "chunk_id": "chunk_30"
+        },
+        {
+          "text": "линейные классификаторы",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "ядровый SVM",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "ядровый SVM",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "алгоритм SVM",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "нелинейные разделяющие поверхности",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "вывод постановки задачи SVM",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "вывод постановки задачи SVM",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "тут",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "лекция К.В. Воронцова",
+          "chunk_id": "chunk_31"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "label": "выражение",
+      "members": [
+        "n14",
+        "n46",
+        "n49",
+        "n57",
+        "n108",
+        "n129",
+        "n130",
+        "n133",
+        "n138",
+        "n140",
+        "n243",
+        "n246",
+        "n275",
+        "n276",
+        "n277",
+        "n278",
+        "n279",
+        "n280",
+        "n281",
+        "n282",
+        "n283",
+        "n284",
+        "n285",
+        "n286",
+        "n287",
+        "n288",
+        "n289",
+        "n290",
+        "n291",
+        "n292",
+        "n293",
+        "n294",
+        "n317",
+        "n318",
+        "n319"
+      ],
+      "size": 35,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "метки классов",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "метка класса",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "метка класса",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "w",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "w",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "w",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "w",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "w",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "w",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "w",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "w",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "w",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "y_i",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "y_i",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "y_i",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "градиент",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "градиент",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "градиент",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "скалярное произведение",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "скалярное произведение",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "скалярное произведение",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "скалярное произведение",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "скалярное произведение",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "скалярное произведение",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "скалярное произведение",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "x_i",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "x_i",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "x_i",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "x_i",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "сумма",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "сумма",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "сумма",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "сумма",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "сумма",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "сумма",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "сумма",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "сумма",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "сумма",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "вывод",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "вывод",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "выражение",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "выражение",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "выражение",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "выражение",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "выражение",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "выражение",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "выражение",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "сигмоида",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "сигмоида",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "сигмоида",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "сигмоида",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "сигмоида",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "сигмоида",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "σ(⟨w,x_i⟩)",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "σ(⟨w,x_i⟩)",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "L(w,X,y)",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "L(w,X,y)",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "(1-y_i)",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "линейная регрессия",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "линейная регрессия",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "явная формула решения",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "логистическая регрессия",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "логистическая регрессия",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "логистическая регрессия",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "градиентный спуск",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "просто",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "градиент функции потерь",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "градиент функции потерь",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "градиент функции потерь",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "разность",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "разность",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "разность",
+          "chunk_id": "chunk_44"
+        },
+        {
+          "text": "формула градиента",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "свойство",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "производная логарифма сигмоиды",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "сигмоида от минус z",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "градиент логарифма сигмоиды",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "сигмоида от минус скалярного произведения на x_i",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "минус сумма",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "y_i x_i сигмоида от минус скалярного произведения",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "в другую форму",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "в итоговую форму",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "минус сумма x_i (y_i - сигмоида от скалярного произведения)",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "±1",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "0 и 1",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "∑_{i=1}^N log(1+e^{-y_i⟨w,x_i⟩})",
+          "chunk_id": "chunk_50"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "label": "наличие клик",
+      "members": [
+        "n207",
+        "n208",
+        "n209",
+        "n210",
+        "n211",
+        "n212",
+        "n213",
+        "n214",
+        "n215",
+        "n216",
+        "n217",
+        "n218",
+        "n219",
+        "n220",
+        "n221",
+        "n222",
+        "n223",
+        "n224"
+      ],
+      "size": 18,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "классификация",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "предсказание вероятностей",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "пример",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "предсказание кликов",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "предсказание кликов",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "интернет",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "интернет",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "интернет",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "реклама",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "поиск",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "наличие клика",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "наличие клика",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "обучающий лог",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "повторение условий эксперимента",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "повторение условий эксперимента",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "клик пользователя",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "клик пользователя",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "клик пользователя",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "клик пользователя",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "наличие клика в обучающем логе",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "повторение условий эксперимента обязательно приводит к клику",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "клик",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "клик",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "реализация случайной величины",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "отношение положительных и отрицательных примеров сходится к вероятности",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "кликабельность",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "кликабельность",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "истинная вероятность клика",
+          "chunk_id": "chunk_34"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "label": "опорный вектор",
+      "members": [
+        "n151",
+        "n152",
+        "n153",
+        "n154",
+        "n155",
+        "n156",
+        "n157",
+        "n158",
+        "n159",
+        "n160",
+        "n162",
+        "n163",
+        "n166"
+      ],
+      "size": 13,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "никто",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "никто",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "линейная разделимость классов",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "возможность провести оптимальную плоскость без ошибок",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "итоговое положение плоскости",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "несколько обучающих примеров",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "обучающие примеры",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "ближайшие к плоскости правильно классифицированные объекты",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "ближайшие к плоскости правильно классифицированные объекты",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "опорные вектора",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "опорные вектора",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "опорный вектор",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "support vectors",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "правильно классифицированный объект",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "метод опорных векторов",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "метод опорных векторов",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "метод опорных векторов",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "метод опорных векторов",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "метод опорных векторов",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "support vector machine",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "начиная с шестидесятых годов",
+          "chunk_id": "chunk_26"
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "label": "в шестидесятый год",
+      "members": [
+        "n161",
+        "n165",
+        "n167",
+        "n168",
+        "n169",
+        "n170",
+        "n171"
+      ],
+      "size": 7,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "метод",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "метод",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "метод",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "метод",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "метод",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "метод",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "машинное обучение",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "машинное обучение",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "в шестидесятые годы",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "методы, основанные на деревьях решений",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "методы, основанные на деревьях решений",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "методы, основанные на деревьях решений",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "в девяностые годы",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "нейросети",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "популярен",
+          "chunk_id": "chunk_27"
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "label": "гиперплоскость",
+      "members": [
+        "n320",
+        "n321",
+        "n322",
+        "n331",
+        "n332",
+        "n333",
+        "n334"
+      ],
+      "size": 7,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "разделяющая поверхность модели логистической регрессии",
+          "chunk_id": "chunk_51"
+        },
+        {
+          "text": "гиперплоскость",
+          "chunk_id": "chunk_51"
+        },
+        {
+          "text": "гиперплоскость",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "разделяющая поверхность",
+          "chunk_id": "chunk_51"
+        },
+        {
+          "text": "разделяющая поверхность",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "граница",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "граница",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "значение 1/2",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "равенство p=1/2",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "равенство p=1/2",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "равенство ⟨w,x⟩=0",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "равенство ⟨w,x⟩=0",
+          "chunk_id": "chunk_54"
+        }
+      ]
+    },
+    {
+      "id": "c9",
+      "label": "положительный класс",
+      "members": [
+        "n17",
+        "n19",
+        "n20",
+        "n21",
+        "n22",
+        "n23",
+        "n25",
+        "n26",
+        "n27",
+        "n28"
+      ],
+      "size": 10,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "метки {0,1}",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "плоскость",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "плоскость",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "плоскость",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "плоскость",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "объекты одного класса",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "положительный класс",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "от плоскости",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "от плоскости",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "отрицательный класс",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "линейно разделимая",
+          "chunk_id": "chunk_3"
+        },
+        {
+          "text": "линейно разделимые",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "ситуация",
+          "chunk_id": "chunk_3"
+        },
+        {
+          "text": "ситуация",
+          "chunk_id": "chunk_3"
+        },
+        {
+          "text": "ситуацию",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "в реальной жизни",
+          "chunk_id": "chunk_3"
+        },
+        {
+          "text": "крайне редко",
+          "chunk_id": "chunk_3"
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "label": "знак",
+      "members": [
+        "n29",
+        "n30",
+        "n31",
+        "n32",
+        "n33",
+        "n34",
+        "n35",
+        "n36",
+        "n38",
+        "n39",
+        "n40",
+        "n41",
+        "n42"
+      ],
+      "size": 13,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "ошибка",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "ошибки",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "предсказание",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "предсказание",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "предсказание",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "предсказание",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "предсказание",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "предсказания",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "предсказание",
+          "chunk_id": "chunk_47"
+        },
+        {
+          "text": "5",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "1",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "1",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "модуль числа",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "знак числа",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "знак",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "правильный",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "визуализировать",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "проблемы",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "визуализация",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "прямая",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "прямая",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "прямая",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "точки",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "точки",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "всех точках",
+          "chunk_id": "chunk_10"
+        }
+      ]
+    },
+    {
+      "id": "c11",
+      "label": "монетка",
+      "members": [
+        "n249",
+        "n250",
+        "n251",
+        "n252",
+        "n253"
+      ],
+      "size": 5,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "распределение Бернулли",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "распределение Бернулли",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "распределение Бернулли",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "распределение Бернулли",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "распределение Бернулли",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "самое простое распределение",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "броски монетки",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "монетка",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "событие",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "событие",
+          "chunk_id": "chunk_40"
+        }
+      ]
+    },
+    {
+      "id": "c12",
+      "label": "норма w",
+      "members": [
+        "n122",
+        "n123",
+        "n124",
+        "n125",
+        "n126",
+        "n127",
+        "n128",
+        "n131",
+        "n132",
+        "n135",
+        "n136",
+        "n137",
+        "n139",
+        "n141"
+      ],
+      "size": 14,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "функция потерь L",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "функция потерь L",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "функция потерь L",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "λ * квадрат нормы w",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "норма w",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "L2-нормой",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "сумма по i",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "слагаемое суммы",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "max(0, 1 - y_i * скалярное произведение)",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "градиент функции L по w",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "градиент функции L по w",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "градиент функции L по w",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "2λw",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "низкая уверенность",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "разделяющая плоскость",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "разделяющая плоскость",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "большое расстояние",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "наблюдение",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "исследователь",
+          "chunk_id": "chunk_22"
+        }
+      ]
+    },
+    {
+      "id": "c13",
+      "label": "(-∞, ∞)",
+      "members": [
+        "n18",
+        "n225",
+        "n226",
+        "n228",
+        "n229",
+        "n230",
+        "n231"
+      ],
+      "size": 7,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "линейная модель",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "линейная модель",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "линейная модель",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "линейная модель",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "линейная модель",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "клик на обучающем примере",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "случайная величина",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "от 0 до 1",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "от 0 до 1",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "с соблюдением ограничения вероятности",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "объект, связанный с вероятностью",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "объект, связанный с вероятностью",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "(-∞, ∞)",
+          "chunk_id": "chunk_35"
+        }
+      ]
+    },
+    {
+      "id": "c14",
+      "label": "второй модель",
+      "members": [
+        "n96",
+        "n97",
+        "n98",
+        "n99",
+        "n100",
+        "n101",
+        "n102"
+      ],
+      "size": 7,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "первая модель",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "первая модель",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "вторая модель",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "(неявный объект)",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "модели",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "модели",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "модели",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_30"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_30"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "неуверенность в ответе",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "непотопляемая уверенность",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "правда",
+          "chunk_id": "chunk_15"
+        }
+      ]
+    },
+    {
+      "id": "c15",
+      "label": "единственный",
+      "members": [
+        "n37",
+        "n109",
+        "n110",
+        "n111",
+        "n112",
+        "n113",
+        "n115",
+        "n116",
+        "n117"
+      ],
+      "size": 9,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "решение",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "решение",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "решение",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "аналитическая формула",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "стохастический градиентный спуск",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "перцептрон Розенблатта",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "перцептрон Розенблатта",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "перцептрон Розенблатта",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "первая вычислительная модель нейросети",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "глубокое обучение",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "особенность",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "единственное",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "начальные параметры",
+          "chunk_id": "chunk_19"
+        }
+      ]
+    },
+    {
+      "id": "c16",
+      "label": "линейный классификация",
+      "members": [
+        "n0",
+        "n1",
+        "n2",
+        "n3"
+      ],
+      "size": 4,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "линейная классификация",
+          "chunk_id": "chunk_0"
+        },
+        {
+          "text": "задача классификации",
+          "chunk_id": "chunk_0"
+        },
+        {
+          "text": "задача классификации",
+          "chunk_id": "chunk_0"
+        },
+        {
+          "text": "задача классификации",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "бинарная классификация",
+          "chunk_id": "chunk_0"
+        },
+        {
+          "text": "бинарная классификация",
+          "chunk_id": "chunk_0"
+        },
+        {
+          "text": "два класса",
+          "chunk_id": "chunk_0"
+        }
+      ]
+    },
+    {
+      "id": "c17",
+      "label": "но не правильный",
+      "members": [
+        "n302",
+        "n303",
+        "n304"
+      ],
+      "size": 3,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "ответ",
+          "chunk_id": "chunk_47"
+        },
+        {
+          "text": "ответ",
+          "chunk_id": "chunk_47"
+        },
+        {
+          "text": "но не правильный",
+          "chunk_id": "chunk_47"
+        },
+        {
+          "text": "порог 0,5",
+          "chunk_id": "chunk_47"
+        }
+      ]
+    },
+    {
+      "id": "c18",
+      "label": "метрика",
+      "members": [
+        "n24",
+        "n305",
+        "n306",
+        "n307",
+        "n308",
+        "n309",
+        "n310"
+      ],
+      "size": 7,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "выборка",
+          "chunk_id": "chunk_3"
+        },
+        {
+          "text": "выборка",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "порог",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "порог",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "0,5",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "регрессия",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "метрика",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "доля",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "примерно совпадает с реальной",
+          "chunk_id": "chunk_48"
+        }
+      ]
+    },
+    {
+      "id": "c19",
+      "label": "не очевидный",
+      "members": [
+        "n323",
+        "n324",
+        "n325",
+        "n326",
+        "n327"
+      ],
+      "size": 5,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "множество точек класса 0",
+          "chunk_id": "chunk_51"
+        },
+        {
+          "text": "множество точек класса 0",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "отсечка",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "предсказанная вероятность",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "выбор значения",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "не очевидное",
+          "chunk_id": "chunk_52"
+        }
+      ]
+    },
+    {
+      "id": "c20",
+      "label": "значение",
+      "members": [
+        "n328",
+        "n329",
+        "n330"
+      ],
+      "size": 3,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "выбор",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "значение",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "значение",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "настоящая вероятность",
+          "chunk_id": "chunk_53"
+        }
+      ]
+    },
+    {
+      "id": "c21",
+      "label": "специальный",
+      "members": [
+        "n177",
+        "n178",
+        "n179",
+        "n180",
+        "n181",
+        "n182",
+        "n183",
+        "n184",
+        "n185",
+        "n186",
+        "n187",
+        "n188",
+        "n189",
+        "n190"
+      ],
+      "size": 14,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "перебор",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "перебор",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "люди",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "люди",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "люди",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "люди",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "алгоритм",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "алгоритм",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "алгоритм",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "алгоритм",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "специальный",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "гиперпараметры",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "гиперпараметры",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "гиперпараметры",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "оптимальные",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "подбор",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "трава",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "зеленее",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "компьютеры",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "медленнее",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "роскошь",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "неплохо",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "любая ситуация",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "любая ситуация",
+          "chunk_id": "chunk_30"
+        }
+      ]
+    },
+    {
+      "id": "c22",
+      "label": "знак предсказание",
+      "members": [
+        "n239",
+        "n295",
+        "n296",
+        "n297",
+        "n298",
+        "n299",
+        "n300",
+        "n301"
+      ],
+      "size": 8,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "формула",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "формула",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "формула",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "предсказание модели",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "p = σ(⟨w, x_i⟩)",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "вероятность положительного класса",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "предсказание класса",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "в других методах",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "в других методах",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "знак предсказания",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "положительные",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "положительный",
+          "chunk_id": "chunk_47"
+        }
+      ]
+    },
+    {
+      "id": "c23",
+      "label": "x",
+      "members": [
+        "n4",
+        "n5",
+        "n6",
+        "n7",
+        "n8",
+        "n9",
+        "n10",
+        "n11",
+        "n13",
+        "n15"
+      ],
+      "size": 10,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "K классов",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "таргеты y",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "принадлежность классу",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "принадлежность",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "{-1,1}",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "x",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "векторы",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "векторы",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "ℝ^D",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "-1 и 1",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "{0,1}",
+          "chunk_id": "chunk_1"
+        }
+      ]
+    },
+    {
+      "id": "c24",
+      "label": "недостаток",
+      "members": [
+        "n70",
+        "n78",
+        "n79",
+        "n80",
+        "n81",
+        "n82"
+      ],
+      "size": 6,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "функция",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "функция",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "функция",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "функции",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "функции",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "функция",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "(оставлено пустым, так как объект не указан)",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "достоинства",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "недостатки",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "подавляющее большинство отступов",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "отрицательные отступы",
+          "chunk_id": "chunk_11"
+        }
+      ]
+    },
+    {
+      "id": "c25",
+      "label": "первый слагаемое",
+      "members": [
+        "n142",
+        "n143",
+        "n144",
+        "n145",
+        "n146",
+        "n147",
+        "n148",
+        "n149",
+        "n150"
+      ],
+      "size": 9,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "первое слагаемое",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "ширина полосы",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "максимизация",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "минимизация",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "второе слагаемое",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "штраф",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "штраф",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "неправильное расположение объектов",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "разделительная полоса",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "оптимальная плоскость",
+          "chunk_id": "chunk_24"
+        }
+      ]
+    },
+    {
+      "id": "c26",
+      "label": "желание",
+      "members": [
+        "n74",
+        "n203",
+        "n204",
+        "n205",
+        "n206"
+      ],
+      "size": 5,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "нулю",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "нуль",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "единица",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "интересный метод",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "желание",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "желание",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "посмотреть на классификацию",
+          "chunk_id": "chunk_32"
+        }
+      ]
+    },
+    {
+      "id": "c27",
+      "label": "локально",
+      "members": [
+        "n83",
+        "n84",
+        "n85",
+        "n86",
+        "n87"
+      ],
+      "size": 5,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "катастрофа",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "не так",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "локально",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "те классы",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "те классы",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "наша модель",
+          "chunk_id": "chunk_12"
+        }
+      ]
+    },
+    {
+      "id": "c28",
+      "label": "утверждение",
+      "members": [
+        "n88",
+        "n89",
+        "n90",
+        "n91",
+        "n92",
+        "n93",
+        "n94",
+        "n95"
+      ],
+      "size": 8,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "значение метрики",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "значение метрики",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "значение метрики",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "одинаковое",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "приемлемое",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "большой по модулю",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "маленький",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "утверждение",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "утверждение",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "первая модель лучше второй",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "вопрос",
+          "chunk_id": "chunk_14"
+        }
+      ]
+    },
+    {
+      "id": "c29",
+      "label": "из-за небольшой количество параметр",
+      "members": [
+        "n172",
+        "n173",
+        "n174",
+        "n175",
+        "n176"
+      ],
+      "size": 5,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "из-за небольшого количества параметров",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "из-за доказуемой оптимальности",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "специальный алгоритм",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "специальный алгоритм",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "оптимальные гиперпараметры",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "подбор гиперпараметров",
+          "chunk_id": "chunk_28"
+        }
+      ]
+    },
+    {
+      "id": "c30",
+      "label": "вышеперечисленный проблема",
+      "members": [
+        "n43",
+        "n44",
+        "n45",
+        "n47",
+        "n48",
+        "n50"
+      ],
+      "size": 6,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "функционал ошибки",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "функционал ошибки",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "вышеперечисленные проблемы",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "число ошибок классификатора",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "число ошибок классификатора",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "число ошибок классификатора",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "сумма по i [y_i ≠ sign⟨w, x_i⟩]",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "обе части",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "обе части",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "сумма по i [y_i ⟨w, x_i⟩ < 0]",
+          "chunk_id": "chunk_7"
+        }
+      ]
+    },
+    {
+      "id": "c31",
+      "label": "значение 1",
+      "members": [
+        "n65",
+        "n66",
+        "n67",
+        "n68",
+        "n69",
+        "n71",
+        "n72",
+        "n73",
+        "n75",
+        "n77"
+      ],
+      "size": 10,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "функция F(M)",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "функция F(M)",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "функция F(M)",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "каждого из отступов",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "[M < 0]",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "значение 1",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "M < 0",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "кусочно-постоянная",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "невозможность оптимизации всей суммы градиентными методами",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "производная функции",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "производная функции",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "более гладкой функцией",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "мажорирования более гладкой функ",
+          "chunk_id": "chunk_10"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "ce0",
+      "source": "c16",
+      "target": "c23",
+      "label": "обобщаться до",
+      "members": [
+        "e3"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce1",
+      "source": "c0",
+      "target": "c23",
+      "label": "обозначаться как",
+      "members": [
+        "e8"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce2",
+      "source": "c4",
+      "target": "c23",
+      "label": "встречаться как",
+      "members": [
+        "e9"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce3",
+      "source": "c9",
+      "target": "c0",
+      "label": "разделить",
+      "members": [
+        "e11",
+        "e15"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce4",
+      "source": "c0",
+      "target": "c13",
+      "label": "хотеть обучить",
+      "members": [
+        "e12"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce5",
+      "source": "c13",
+      "target": "c9",
+      "label": "задавать",
+      "members": [
+        "e13"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce6",
+      "source": "c18",
+      "target": "c9",
+      "label": "называться",
+      "members": [
+        "e18"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce7",
+      "source": "c0",
+      "target": "c10",
+      "label": "важно",
+      "members": [
+        "e24",
+        "e25",
+        "e29",
+        "e78"
+      ],
+      "size": 4,
+      "embedding": []
+    },
+    {
+      "id": "ce8",
+      "source": "c15",
+      "target": "c10",
+      "label": "можно",
+      "members": [
+        "e27"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce9",
+      "source": "c0",
+      "target": "c30",
+      "label": "упрощать",
+      "members": [
+        "e32",
+        "e34",
+        "e37",
+        "e39"
+      ],
+      "size": 4,
+      "embedding": []
+    },
+    {
+      "id": "ce10",
+      "source": "c30",
+      "target": "c4",
+      "label": "минимизировать",
+      "members": [
+        "e35",
+        "e40"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce11",
+      "source": "c0",
+      "target": "c4",
+      "label": "вносить вклад в",
+      "members": [
+        "e38",
+        "e121",
+        "e251",
+        "e266"
+      ],
+      "size": 4,
+      "embedding": []
+    },
+    {
+      "id": "ce12",
+      "source": "c4",
+      "target": "c0",
+      "label": "показывать",
+      "members": [
+        "e45",
+        "e46",
+        "e101"
+      ],
+      "size": 3,
+      "embedding": []
+    },
+    {
+      "id": "ce13",
+      "source": "c31",
+      "target": "c10",
+      "label": "существовать в",
+      "members": [
+        "e55",
+        "e60"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce14",
+      "source": "c24",
+      "target": "c31",
+      "label": "иметь свойство",
+      "members": [
+        "e57",
+        "e58"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce15",
+      "source": "c31",
+      "target": "c26",
+      "label": "равный",
+      "members": [
+        "e59"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce16",
+      "source": "c0",
+      "target": "c31",
+      "label": "мочь мажорировать функция",
+      "members": [
+        "e61",
+        "e62"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce17",
+      "source": "c0",
+      "target": "c24",
+      "label": "мочь мажорировать",
+      "members": [
+        "e63",
+        "e64"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce18",
+      "source": "c0",
+      "target": "c27",
+      "label": "постичь ли",
+      "members": [
+        "e69",
+        "e70",
+        "e73"
+      ],
+      "size": 3,
+      "embedding": []
+    },
+    {
+      "id": "ce19",
+      "source": "c9",
+      "target": "c27",
+      "label": "можно выправить",
+      "members": [
+        "e71"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce20",
+      "source": "c0",
+      "target": "c28",
+      "label": "являться",
+      "members": [
+        "e75",
+        "e80",
+        "e81"
+      ],
+      "size": 3,
+      "embedding": []
+    },
+    {
+      "id": "ce21",
+      "source": "c10",
+      "target": "c0",
+      "label": "иметь",
+      "members": [
+        "e79"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce22",
+      "source": "c24",
+      "target": "c0",
+      "label": "равный",
+      "members": [
+        "e95"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce23",
+      "source": "c4",
+      "target": "c15",
+      "label": "иметь",
+      "members": [
+        "e96",
+        "e98",
+        "e102"
+      ],
+      "size": 3,
+      "embedding": []
+    },
+    {
+      "id": "ce24",
+      "source": "c15",
+      "target": "c0",
+      "label": "мочь быть применить",
+      "members": [
+        "e97"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce25",
+      "source": "c12",
+      "target": "c4",
+      "label": "зависеть от",
+      "members": [
+        "e109",
+        "e116",
+        "e118"
+      ],
+      "size": 3,
+      "embedding": []
+    },
+    {
+      "id": "ce26",
+      "source": "c0",
+      "target": "c12",
+      "label": "иметь уверенность",
+      "members": [
+        "e120",
+        "e122"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce27",
+      "source": "c4",
+      "target": "c12",
+      "label": "минимизироваться",
+      "members": [
+        "e124",
+        "e125"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce28",
+      "source": "c0",
+      "target": "c25",
+      "label": "расположить относительно",
+      "members": [
+        "e130"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce29",
+      "source": "c0",
+      "target": "c9",
+      "label": "не являться",
+      "members": [
+        "e131",
+        "e139"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce30",
+      "source": "c25",
+      "target": "c10",
+      "label": "не мочь быть провести без",
+      "members": [
+        "e132"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce31",
+      "source": "c0",
+      "target": "c6",
+      "label": "называть",
+      "members": [
+        "e140",
+        "e141"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce32",
+      "source": "c7",
+      "target": "c6",
+      "label": "зваться",
+      "members": [
+        "e142"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce33",
+      "source": "c6",
+      "target": "c3",
+      "label": "иметь аббревиатура",
+      "members": [
+        "e144"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce34",
+      "source": "c6",
+      "target": "c7",
+      "label": "быть сильный из известный метод",
+      "members": [
+        "e145"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce35",
+      "source": "c3",
+      "target": "c7",
+      "label": "быть",
+      "members": [
+        "e152"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce36",
+      "source": "c3",
+      "target": "c29",
+      "label": "быть популярный",
+      "members": [
+        "e153",
+        "e154"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce37",
+      "source": "c0",
+      "target": "c29",
+      "label": "подбирать",
+      "members": [
+        "e155",
+        "e157"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce38",
+      "source": "c29",
+      "target": "c0",
+      "label": "выбираться под",
+      "members": [
+        "e156"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce39",
+      "source": "c29",
+      "target": "c21",
+      "label": "осуществляться метод",
+      "members": [
+        "e158"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce40",
+      "source": "c21",
+      "target": "c0",
+      "label": "подобрать под",
+      "members": [
+        "e161"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce41",
+      "source": "c21",
+      "target": "c14",
+      "label": "нуждаться",
+      "members": [
+        "e169"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce42",
+      "source": "c14",
+      "target": "c21",
+      "label": "должный гарантированно работать в",
+      "members": [
+        "e170",
+        "e171",
+        "e172"
+      ],
+      "size": 3,
+      "embedding": []
+    },
+    {
+      "id": "ce43",
+      "source": "c3",
+      "target": "c14",
+      "label": "являться",
+      "members": [
+        "e173"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce44",
+      "source": "c0",
+      "target": "c26",
+      "label": "обозначаться",
+      "members": [
+        "e184",
+        "e185"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce45",
+      "source": "c5",
+      "target": "c0",
+      "label": "направить на",
+      "members": [
+        "e196",
+        "e202"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce46",
+      "source": "c0",
+      "target": "c5",
+      "label": "иметь",
+      "members": [
+        "e199",
+        "e200"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce47",
+      "source": "c2",
+      "target": "c13",
+      "label": "иметь диапазон",
+      "members": [
+        "e204"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce48",
+      "source": "c13",
+      "target": "c2",
+      "label": "предсказывать",
+      "members": [
+        "e209"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce49",
+      "source": "c2",
+      "target": "c22",
+      "label": "являться",
+      "members": [
+        "e215",
+        "e287"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce50",
+      "source": "c2",
+      "target": "c4",
+      "label": "определяться через",
+      "members": [
+        "e217",
+        "e220",
+        "e221",
+        "e255",
+        "e258"
+      ],
+      "size": 5,
+      "embedding": []
+    },
+    {
+      "id": "ce51",
+      "source": "c4",
+      "target": "c2",
+      "label": "максимизировать",
+      "members": [
+        "e218",
+        "e257"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce52",
+      "source": "c14",
+      "target": "c1",
+      "label": "предсказывать",
+      "members": [
+        "e225"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce53",
+      "source": "c4",
+      "target": "c14",
+      "label": "оптимизироваться для",
+      "members": [
+        "e226"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce54",
+      "source": "c1",
+      "target": "c11",
+      "label": "применяться для",
+      "members": [
+        "e227"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce55",
+      "source": "c11",
+      "target": "c2",
+      "label": "иметь",
+      "members": [
+        "e230",
+        "e233",
+        "e235",
+        "e244"
+      ],
+      "size": 4,
+      "embedding": []
+    },
+    {
+      "id": "ce56",
+      "source": "c11",
+      "target": "c5",
+      "label": "являться",
+      "members": [
+        "e231"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce57",
+      "source": "c5",
+      "target": "c2",
+      "label": "происходить с вероятность",
+      "members": [
+        "e232"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce58",
+      "source": "c0",
+      "target": "c2",
+      "label": "переходить",
+      "members": [
+        "e249",
+        "e252",
+        "e253",
+        "e288"
+      ],
+      "size": 4,
+      "embedding": []
+    },
+    {
+      "id": "ce59",
+      "source": "c0",
+      "target": "c22",
+      "label": "заключаться в переход к",
+      "members": [
+        "e289"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce60",
+      "source": "c10",
+      "target": "c13",
+      "label": "находиться в диапазон",
+      "members": [
+        "e292"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce61",
+      "source": "c10",
+      "target": "c22",
+      "label": "являться",
+      "members": [
+        "e293"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce62",
+      "source": "c7",
+      "target": "c4",
+      "label": "называться",
+      "members": [
+        "e301"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce63",
+      "source": "c7",
+      "target": "c1",
+      "label": "не называться",
+      "members": [
+        "e302"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce64",
+      "source": "c0",
+      "target": "c1",
+      "label": "предсказывать",
+      "members": [
+        "e304"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce65",
+      "source": "c8",
+      "target": "c19",
+      "label": "отделять",
+      "members": [
+        "e311"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce66",
+      "source": "c0",
+      "target": "c19",
+      "label": "присваивать класс",
+      "members": [
+        "e312"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce67",
+      "source": "c0",
+      "target": "c8",
+      "label": "решить провести",
+      "members": [
+        "e317"
+      ],
+      "size": 1,
+      "embedding": []
+    }
+  ]
+}

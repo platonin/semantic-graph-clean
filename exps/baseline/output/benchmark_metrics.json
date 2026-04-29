@@ -1,0 +1,34 @@
+{
+  "backend": "spacy",
+  "language": "ru",
+  "input": "../benchmark/final_bench/formated_fragment2.md",
+  "gt": "../benchmark/final_bench/graph_clustered.json",
+  "pred_stats": {
+    "nodes": 152,
+    "edges": 112
+  },
+  "gt_stats": {
+    "nodes": 55,
+    "edges": 51
+  },
+  "metrics": {
+    "nodes": {
+      "precision_sim": 0.78227698802948,
+      "recall_sim": 0.7495290040969849,
+      "f1_sim": 0.7655529417948866,
+      "precision_dist": 0.21772301197052002,
+      "recall_dist": 0.25047099590301514,
+      "pred_count": 152,
+      "gt_count": 55
+    },
+    "edges": {
+      "precision_sim": 0.7826454043388367,
+      "recall_sim": 0.7611991167068481,
+      "f1_sim": 0.7717733001686992,
+      "precision_dist": 0.21735459566116333,
+      "recall_dist": 0.23880088329315186,
+      "pred_count": 112,
+      "gt_count": 51
+    }
+  }
+}

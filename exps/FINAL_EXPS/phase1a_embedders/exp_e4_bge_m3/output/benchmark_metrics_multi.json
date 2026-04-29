@@ -1,0 +1,1706 @@
+{
+  "agglomerative": {
+    "0.250": {
+      "graph_score": 0.18132533136282677,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.1240429977105127,
+        "recall": 0.47587404576214876,
+        "f_beta": 0.19679001892419684,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 26.173072516918182,
+        "pred_count": 211,
+        "gt_count": 55,
+        "matched_count": 53
+      },
+      "edges": {
+        "precision": 0.09674955198639318,
+        "recall": 0.43252740888034596,
+        "f_beta": 0.15812830002077166,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 22.058897852897644,
+        "pred_count": 228,
+        "gt_count": 51,
+        "matched_count": 51
+      },
+      "pred_structure": {
+        "n_nodes": 211,
+        "n_edges": 228,
+        "density": 0.005145565335138795,
+        "n_components": 21,
+        "n_isolated": 4,
+        "component_sizes": [
+          156,
+          8,
+          8,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "component_size_min": 1,
+        "component_size_max": 156,
+        "component_size_mean": 10.047619047619047,
+        "component_size_quantiles": {
+          "q25": 2.0,
+          "q50": 2.0,
+          "q75": 3.0,
+          "q90": 8.0
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "0.322": {
+      "graph_score": 0.2015221727015272,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.1522770141777785,
+        "recall": 0.3820768719369715,
+        "f_beta": 0.21776402027495786,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 21.014227956533432,
+        "pred_count": 138,
+        "gt_count": 55,
+        "matched_count": 49
+      },
+      "edges": {
+        "precision": 0.11326584675924374,
+        "recall": 0.40642450895963933,
+        "f_beta": 0.17715940134138122,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 20.727649956941605,
+        "pred_count": 183,
+        "gt_count": 51,
+        "matched_count": 49
+      },
+      "pred_structure": {
+        "n_nodes": 138,
+        "n_edges": 183,
+        "density": 0.009679466835925103,
+        "n_components": 6,
+        "n_isolated": 3,
+        "component_sizes": [
+          128,
+          4,
+          3,
+          1,
+          1,
+          1
+        ],
+        "component_size_min": 1,
+        "component_size_max": 128,
+        "component_size_mean": 23.0,
+        "component_size_quantiles": {
+          "q25": 1.0,
+          "q50": 2.0,
+          "q75": 3.75,
+          "q90": 66.0
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "0.394": {
+      "graph_score": 0.2198949044913202,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.17970101735026567,
+        "recall": 0.3169272487813776,
+        "f_beta": 0.22935524582862857,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 17.43099868297577,
+        "pred_count": 97,
+        "gt_count": 55,
+        "matched_count": 47
+      },
+      "edges": {
+        "precision": 0.13782194296518963,
+        "recall": 0.40535865577996943,
+        "f_beta": 0.20570439248535768,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 20.673291444778442,
+        "pred_count": 150,
+        "gt_count": 51,
+        "matched_count": 48
+      },
+      "pred_structure": {
+        "n_nodes": 97,
+        "n_edges": 150,
+        "density": 0.01610824742268041,
+        "n_components": 3,
+        "n_isolated": 1,
+        "component_sizes": [
+          93,
+          3,
+          1
+        ],
+        "component_size_min": 1,
+        "component_size_max": 93,
+        "component_size_mean": 32.333333333333336,
+        "component_size_quantiles": {
+          "q25": 2.0,
+          "q50": 3.0,
+          "q75": 48.0,
+          "q90": 75.0
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "0.467": {
+      "graph_score": 0.23736735894453043,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.21211136897949323,
+        "recall": 0.28152963519096375,
+        "f_beta": 0.24193953024223447,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 15.484129935503006,
+        "pred_count": 73,
+        "gt_count": 55,
+        "matched_count": 40
+      },
+      "edges": {
+        "precision": 0.16383291546963463,
+        "recall": 0.3887016229769763,
+        "f_beta": 0.2305091019979743,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 19.82378277182579,
+        "pred_count": 121,
+        "gt_count": 51,
+        "matched_count": 45
+      },
+      "pred_structure": {
+        "n_nodes": 73,
+        "n_edges": 121,
+        "density": 0.02302130898021309,
+        "n_components": 2,
+        "n_isolated": 1,
+        "component_sizes": [
+          72,
+          1
+        ],
+        "component_size_min": 1,
+        "component_size_max": 72,
+        "component_size_mean": 36.5,
+        "component_size_quantiles": {
+          "q25": 18.75,
+          "q50": 36.5,
+          "q75": 54.25,
+          "q90": 64.9
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "0.539": {
+      "graph_score": 0.24816737973690034,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.263804185502934,
+        "recall": 0.25421130603010006,
+        "f_beta": 0.25891892280843526,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 13.981621831655502,
+        "pred_count": 53,
+        "gt_count": 55,
+        "matched_count": 36
+      },
+      "edges": {
+        "precision": 0.17578792812848332,
+        "recall": 0.3412353898964676,
+        "f_beta": 0.232040065129598,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 17.40300488471985,
+        "pred_count": 99,
+        "gt_count": 51,
+        "matched_count": 46
+      },
+      "pred_structure": {
+        "n_nodes": 53,
+        "n_edges": 99,
+        "density": 0.035921625544267054,
+        "n_components": 2,
+        "n_isolated": 1,
+        "component_sizes": [
+          52,
+          1
+        ],
+        "component_size_min": 1,
+        "component_size_max": 52,
+        "component_size_mean": 26.5,
+        "component_size_quantiles": {
+          "q25": 13.75,
+          "q50": 26.5,
+          "q75": 39.25,
+          "q90": 46.9
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "0.611": {
+      "graph_score": 0.24314658757980834,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.27618006732728745,
+        "recall": 0.225965509631417,
+        "f_beta": 0.24856206059455874,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 12.428103029727936,
+        "pred_count": 45,
+        "gt_count": 55,
+        "matched_count": 32
+      },
+      "edges": {
+        "precision": 0.18410164614518484,
+        "recall": 0.32488525790326733,
+        "f_beta": 0.23502337805768278,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 16.569148153066635,
+        "pred_count": 90,
+        "gt_count": 51,
+        "matched_count": 42
+      },
+      "pred_structure": {
+        "n_nodes": 45,
+        "n_edges": 90,
+        "density": 0.045454545454545456,
+        "n_components": 1,
+        "n_isolated": 0,
+        "component_sizes": [
+          45
+        ],
+        "component_size_min": 45,
+        "component_size_max": 45,
+        "component_size_mean": 45.0,
+        "component_size_quantiles": {
+          "q25": 45.0,
+          "q50": 45.0,
+          "q75": 45.0,
+          "q90": 45.0
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "0.683": {
+      "graph_score": 0.24605486395711937,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.3031916450231503,
+        "recall": 0.21499043919823385,
+        "f_beta": 0.2515845565085715,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 11.824474155902863,
+        "pred_count": 39,
+        "gt_count": 55,
+        "matched_count": 28
+      },
+      "edges": {
+        "precision": 0.18777662041512402,
+        "recall": 0.32400671757903754,
+        "f_beta": 0.23776032512994122,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 16.524342596530914,
+        "pred_count": 88,
+        "gt_count": 51,
+        "matched_count": 43
+      },
+      "pred_structure": {
+        "n_nodes": 39,
+        "n_edges": 88,
+        "density": 0.059379217273954114,
+        "n_components": 1,
+        "n_isolated": 0,
+        "component_sizes": [
+          39
+        ],
+        "component_size_min": 39,
+        "component_size_max": 39,
+        "component_size_mean": 39.0,
+        "component_size_quantiles": {
+          "q25": 39.0,
+          "q50": 39.0,
+          "q75": 39.0,
+          "q90": 39.0
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "0.756": {
+      "graph_score": 0.24497873073483206,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.34730501136472147,
+        "recall": 0.19575373367829757,
+        "f_beta": 0.25038268261177593,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 10.766455352306366,
+        "pred_count": 31,
+        "gt_count": 55,
+        "matched_count": 26
+      },
+      "edges": {
+        "precision": 0.19121057585061316,
+        "recall": 0.31118583912942926,
+        "f_beta": 0.23687280291941631,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 15.870477795600891,
+        "pred_count": 83,
+        "gt_count": 51,
+        "matched_count": 41
+      },
+      "pred_structure": {
+        "n_nodes": 31,
+        "n_edges": 83,
+        "density": 0.08924731182795699,
+        "n_components": 1,
+        "n_isolated": 0,
+        "component_sizes": [
+          31
+        ],
+        "component_size_min": 31,
+        "component_size_max": 31,
+        "component_size_mean": 31.0,
+        "component_size_quantiles": {
+          "q25": 31.0,
+          "q50": 31.0,
+          "q75": 31.0,
+          "q90": 31.0
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "0.828": {
+      "graph_score": 0.22194169894953952,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.4640103625623803,
+        "recall": 0.16029448888518594,
+        "f_beta": 0.23827559158608724,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 8.816196888685226,
+        "pred_count": 19,
+        "gt_count": 55,
+        "matched_count": 17
+      },
+      "edges": {
+        "precision": 0.18125718294597062,
+        "recall": 0.2167978070530237,
+        "f_beta": 0.197440859994718,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 11.056688159704208,
+        "pred_count": 61,
+        "gt_count": 51,
+        "matched_count": 33
+      },
+      "pred_structure": {
+        "n_nodes": 19,
+        "n_edges": 61,
+        "density": 0.1783625730994152,
+        "n_components": 1,
+        "n_isolated": 0,
+        "component_sizes": [
+          19
+        ],
+        "component_size_min": 19,
+        "component_size_max": 19,
+        "component_size_mean": 19.0,
+        "component_size_quantiles": {
+          "q25": 19.0,
+          "q50": 19.0,
+          "q75": 19.0,
+          "q90": 19.0
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "0.900": {
+      "graph_score": 0.17141834482760498,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.556300613615248,
+        "recall": 0.09103100950067694,
+        "f_beta": 0.15645954757928848,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 5.0067055225372314,
+        "pred_count": 9,
+        "gt_count": 55,
+        "matched_count": 8
+      },
+      "edges": {
+        "precision": 0.34409535974264144,
+        "recall": 0.13493935676182017,
+        "f_beta": 0.19385654070007968,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 6.881907194852829,
+        "pred_count": 20,
+        "gt_count": 51,
+        "matched_count": 17
+      },
+      "pred_structure": {
+        "n_nodes": 9,
+        "n_edges": 20,
+        "density": 0.2777777777777778,
+        "n_components": 1,
+        "n_isolated": 0,
+        "component_sizes": [
+          9
+        ],
+        "component_size_min": 9,
+        "component_size_max": 9,
+        "component_size_mean": 9.0,
+        "component_size_quantiles": {
+          "q25": 9.0,
+          "q50": 9.0,
+          "q75": 9.0,
+          "q90": 9.0
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    }
+  },
+  "kmeans": {
+    "k=10": {
+      "graph_score": 0.20223057576645181,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.5561377048492432,
+        "recall": 0.10111594633622603,
+        "f_beta": 0.17111929379976715,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 5.561377048492432,
+        "pred_count": 10,
+        "gt_count": 55,
+        "matched_count": 10
+      },
+      "edges": {
+        "precision": 0.2792508522184884,
+        "recall": 0.22449578315603966,
+        "f_beta": 0.24889749871647876,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 11.449284940958023,
+        "pred_count": 41,
+        "gt_count": 51,
+        "matched_count": 34
+      },
+      "pred_structure": {
+        "n_nodes": 10,
+        "n_edges": 41,
+        "density": 0.45555555555555555,
+        "n_components": 1,
+        "n_isolated": 0,
+        "component_sizes": [
+          10
+        ],
+        "component_size_min": 10,
+        "component_size_max": 10,
+        "component_size_mean": 10.0,
+        "component_size_quantiles": {
+          "q25": 10.0,
+          "q50": 10.0,
+          "q75": 10.0,
+          "q90": 10.0
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "k=25": {
+      "graph_score": 0.258131483776159,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.4100390899181366,
+        "recall": 0.18638140450824392,
+        "f_beta": 0.2562744311988354,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 10.250977247953415,
+        "pred_count": 25,
+        "gt_count": 55,
+        "matched_count": 24
+      },
+      "edges": {
+        "precision": 0.2241681805798705,
+        "recall": 0.31207727100334914,
+        "f_beta": 0.26091706264214437,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 15.915940821170807,
+        "pred_count": 71,
+        "gt_count": 51,
+        "matched_count": 40
+      },
+      "pred_structure": {
+        "n_nodes": 25,
+        "n_edges": 71,
+        "density": 0.11833333333333333,
+        "n_components": 1,
+        "n_isolated": 0,
+        "component_sizes": [
+          25
+        ],
+        "component_size_min": 25,
+        "component_size_max": 25,
+        "component_size_mean": 25.0,
+        "component_size_quantiles": {
+          "q25": 25.0,
+          "q50": 25.0,
+          "q75": 25.0,
+          "q90": 25.0
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "k=40": {
+      "graph_score": 0.24800078562703864,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.30251029804348945,
+        "recall": 0.22000748948617416,
+        "f_beta": 0.25474551414188584,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 12.100411921739578,
+        "pred_count": 40,
+        "gt_count": 55,
+        "matched_count": 31
+      },
+      "edges": {
+        "precision": 0.18487700042517288,
+        "recall": 0.3335036086101158,
+        "f_beta": 0.23788369285476788,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 17.008684039115906,
+        "pred_count": 92,
+        "gt_count": 51,
+        "matched_count": 45
+      },
+      "pred_structure": {
+        "n_nodes": 40,
+        "n_edges": 92,
+        "density": 0.05897435897435897,
+        "n_components": 1,
+        "n_isolated": 0,
+        "component_sizes": [
+          40
+        ],
+        "component_size_min": 40,
+        "component_size_max": 40,
+        "component_size_mean": 40.0,
+        "component_size_quantiles": {
+          "q25": 40.0,
+          "q50": 40.0,
+          "q75": 40.0,
+          "q90": 40.0
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "k=55": {
+      "graph_score": 0.22983626705892918,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.2402812979438088,
+        "recall": 0.2402812979438088,
+        "f_beta": 0.2402812979438088,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 13.215471386909485,
+        "pred_count": 55,
+        "gt_count": 55,
+        "matched_count": 38
+      },
+      "edges": {
+        "precision": 0.16115666114457763,
+        "recall": 0.31915338775690866,
+        "f_beta": 0.21416872073160972,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 16.27682277560234,
+        "pred_count": 101,
+        "gt_count": 51,
+        "matched_count": 45
+      },
+      "pred_structure": {
+        "n_nodes": 55,
+        "n_edges": 101,
+        "density": 0.034006734006734006,
+        "n_components": 2,
+        "n_isolated": 1,
+        "component_sizes": [
+          54,
+          1
+        ],
+        "component_size_min": 1,
+        "component_size_max": 54,
+        "component_size_mean": 27.5,
+        "component_size_quantiles": {
+          "q25": 14.25,
+          "q50": 27.5,
+          "q75": 40.75,
+          "q90": 48.7
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    }
+  },
+  "hdbscan": {
+    "mcs=3,ms=1": {
+      "graph_score": 0.23467320521147483,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.21259296631467514,
+        "recall": 0.26670753955841064,
+        "f_beta": 0.23659539799536425,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 14.668914675712585,
+        "pred_count": 69,
+        "gt_count": 55,
+        "matched_count": 39
+      },
+      "edges": {
+        "precision": 0.16729185244311456,
+        "recall": 0.37722672609721913,
+        "f_beta": 0.23178991603564064,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 19.238563030958176,
+        "pred_count": 115,
+        "gt_count": 51,
+        "matched_count": 46
+      },
+      "pred_structure": {
+        "n_nodes": 69,
+        "n_edges": 115,
+        "density": 0.024509803921568627,
+        "n_components": 2,
+        "n_isolated": 1,
+        "component_sizes": [
+          68,
+          1
+        ],
+        "component_size_min": 1,
+        "component_size_max": 68,
+        "component_size_mean": 34.5,
+        "component_size_quantiles": {
+          "q25": 17.75,
+          "q50": 34.5,
+          "q75": 51.25,
+          "q90": 61.300000000000004
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "mcs=3,ms=3": {
+      "graph_score": 0.24664233790255166,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.22983253668797643,
+        "recall": 0.31758677796884016,
+        "f_beta": 0.2666759204318505,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 17.46727278828621,
+        "pred_count": 76,
+        "gt_count": 55,
+        "matched_count": 42
+      },
+      "edges": {
+        "precision": 0.15283707144760317,
+        "recall": 0.3716038599902508,
+        "f_beta": 0.21659196410860335,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 18.951796859502792,
+        "pred_count": 124,
+        "gt_count": 51,
+        "matched_count": 45
+      },
+      "pred_structure": {
+        "n_nodes": 76,
+        "n_edges": 124,
+        "density": 0.02175438596491228,
+        "n_components": 2,
+        "n_isolated": 0,
+        "component_sizes": [
+          74,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 74,
+        "component_size_mean": 38.0,
+        "component_size_quantiles": {
+          "q25": 20.0,
+          "q50": 38.0,
+          "q75": 56.0,
+          "q90": 66.8
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "mcs=3,ms=5": {
+      "graph_score": 0.23027783670991425,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.19741373209609198,
+        "recall": 0.34816603660583495,
+        "f_beta": 0.25196226333317,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 19.149132013320923,
+        "pred_count": 97,
+        "gt_count": 55,
+        "matched_count": 48
+      },
+      "edges": {
+        "precision": 0.1356833028967363,
+        "recall": 0.36448259797750737,
+        "f_beta": 0.1977511967750306,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 18.588612496852875,
+        "pred_count": 137,
+        "gt_count": 51,
+        "matched_count": 46
+      },
+      "pred_structure": {
+        "n_nodes": 97,
+        "n_edges": 137,
+        "density": 0.014712199312714776,
+        "n_components": 7,
+        "n_isolated": 0,
+        "component_sizes": [
+          83,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 83,
+        "component_size_mean": 13.857142857142858,
+        "component_size_quantiles": {
+          "q25": 2.0,
+          "q50": 2.0,
+          "q75": 3.0,
+          "q90": 35.60000000000003
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "mcs=5,ms=1": {
+      "graph_score": 0.23320498520222396,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.2222224585711956,
+        "recall": 0.2585861336101185,
+        "f_beta": 0.23902919913540369,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 14.222237348556519,
+        "pred_count": 64,
+        "gt_count": 55,
+        "matched_count": 40
+      },
+      "edges": {
+        "precision": 0.16780667137173774,
+        "recall": 0.33890366963311735,
+        "f_beta": 0.22446866430245438,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 17.284087151288986,
+        "pred_count": 103,
+        "gt_count": 51,
+        "matched_count": 42
+      },
+      "pred_structure": {
+        "n_nodes": 64,
+        "n_edges": 103,
+        "density": 0.02554563492063492,
+        "n_components": 3,
+        "n_isolated": 0,
+        "component_sizes": [
+          60,
+          2,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 60,
+        "component_size_mean": 21.333333333333332,
+        "component_size_quantiles": {
+          "q25": 2.0,
+          "q50": 2.0,
+          "q75": 31.0,
+          "q90": 48.400000000000006
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "mcs=5,ms=3": {
+      "graph_score": 0.24734063701239947,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.22979696643979927,
+        "recall": 0.31753762635317717,
+        "f_beta": 0.2666346480828205,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 17.464569449424744,
+        "pred_count": 76,
+        "gt_count": 55,
+        "matched_count": 43
+      },
+      "edges": {
+        "precision": 0.15599972886197708,
+        "recall": 0.3639993673446132,
+        "f_beta": 0.2183996204067679,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 18.56396773457527,
+        "pred_count": 119,
+        "gt_count": 51,
+        "matched_count": 45
+      },
+      "pred_structure": {
+        "n_nodes": 76,
+        "n_edges": 119,
+        "density": 0.02087719298245614,
+        "n_components": 3,
+        "n_isolated": 0,
+        "component_sizes": [
+          72,
+          2,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 72,
+        "component_size_mean": 25.333333333333332,
+        "component_size_quantiles": {
+          "q25": 2.0,
+          "q50": 2.0,
+          "q75": 37.0,
+          "q90": 58.0
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "mcs=5,ms=5": {
+      "graph_score": 0.23027783670991425,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.19741373209609198,
+        "recall": 0.34816603660583495,
+        "f_beta": 0.25196226333317,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 19.149132013320923,
+        "pred_count": 97,
+        "gt_count": 55,
+        "matched_count": 48
+      },
+      "edges": {
+        "precision": 0.1356833028967363,
+        "recall": 0.36448259797750737,
+        "f_beta": 0.1977511967750306,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 18.588612496852875,
+        "pred_count": 137,
+        "gt_count": 51,
+        "matched_count": 46
+      },
+      "pred_structure": {
+        "n_nodes": 97,
+        "n_edges": 137,
+        "density": 0.014712199312714776,
+        "n_components": 7,
+        "n_isolated": 0,
+        "component_sizes": [
+          83,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 83,
+        "component_size_mean": 13.857142857142858,
+        "component_size_quantiles": {
+          "q25": 2.0,
+          "q50": 2.0,
+          "q75": 3.0,
+          "q90": 35.60000000000003
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "mcs=10,ms=1": {
+      "graph_score": 0.2077824359948002,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.1592888246785413,
+        "recall": 0.3214738098057834,
+        "f_beta": 0.21302481372672394,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 17.681059539318085,
+        "pred_count": 111,
+        "gt_count": 55,
+        "matched_count": 46
+      },
+      "edges": {
+        "precision": 0.1382897442444823,
+        "recall": 0.3606379604807087,
+        "f_beta": 0.1999188693969146,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 18.392535984516144,
+        "pred_count": 133,
+        "gt_count": 51,
+        "matched_count": 43
+      },
+      "pred_structure": {
+        "n_nodes": 111,
+        "n_edges": 133,
+        "density": 0.010892710892710893,
+        "n_components": 11,
+        "n_isolated": 0,
+        "component_sizes": [
+          88,
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 88,
+        "component_size_mean": 10.090909090909092,
+        "component_size_quantiles": {
+          "q25": 2.0,
+          "q50": 2.0,
+          "q75": 2.5,
+          "q90": 4.0
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "mcs=10,ms=3": {
+      "graph_score": 0.20946380816083485,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.15232219733297825,
+        "recall": 0.35449529561129484,
+        "f_beta": 0.21308460391935757,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 19.497241258621216,
+        "pred_count": 128,
+        "gt_count": 55,
+        "matched_count": 46
+      },
+      "edges": {
+        "precision": 0.13789790498799293,
+        "recall": 0.3920626710442936,
+        "f_beta": 0.20403261452305074,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 19.995196223258972,
+        "pred_count": 145,
+        "gt_count": 51,
+        "matched_count": 45
+      },
+      "pred_structure": {
+        "n_nodes": 128,
+        "n_edges": 145,
+        "density": 0.008919783464566929,
+        "n_components": 13,
+        "n_isolated": 0,
+        "component_sizes": [
+          100,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 100,
+        "component_size_mean": 9.846153846153847,
+        "component_size_quantiles": {
+          "q25": 2.0,
+          "q50": 2.0,
+          "q75": 3.0,
+          "q90": 3.8000000000000007
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    },
+    "mcs=10,ms=5": {
+      "graph_score": 0.19737766201940404,
+      "node_weight": 0.6,
+      "edge_weight": 0.4,
+      "nodes": {
+        "precision": 0.1373141067113705,
+        "recall": 0.4169355603781613,
+        "f_beta": 0.20658969207926914,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 22.931455820798874,
+        "pred_count": 167,
+        "gt_count": 55,
+        "matched_count": 49
+      },
+      "edges": {
+        "precision": 0.11822483802245835,
+        "recall": 0.41030973196029663,
+        "f_beta": 0.1835596169296064,
+        "beta": 1.0,
+        "tau": 0.6,
+        "tp": 20.925796329975128,
+        "pred_count": 177,
+        "gt_count": 51,
+        "matched_count": 46
+      },
+      "pred_structure": {
+        "n_nodes": 167,
+        "n_edges": 177,
+        "density": 0.006384820720005771,
+        "n_components": 19,
+        "n_isolated": 0,
+        "component_sizes": [
+          125,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 125,
+        "component_size_mean": 8.789473684210526,
+        "component_size_quantiles": {
+          "q25": 2.0,
+          "q50": 2.0,
+          "q75": 3.0,
+          "q90": 3.1999999999999993
+        }
+      },
+      "gt_structure": {
+        "n_nodes": 55,
+        "n_edges": 51,
+        "density": 0.01717171717171717,
+        "n_components": 6,
+        "n_isolated": 0,
+        "component_sizes": [
+          20,
+          11,
+          9,
+          7,
+          6,
+          2
+        ],
+        "component_size_min": 2,
+        "component_size_max": 20,
+        "component_size_mean": 9.166666666666666,
+        "component_size_quantiles": {
+          "q25": 6.25,
+          "q50": 8.0,
+          "q75": 10.5,
+          "q90": 15.5
+        }
+      }
+    }
+  }
+}

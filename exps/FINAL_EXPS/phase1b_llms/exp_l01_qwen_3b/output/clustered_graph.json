@@ -1,0 +1,3038 @@
+{
+  "meta": {
+    "created_at": "2026-05-07T13:28:00.909790+00:00",
+    "source_text": "# Линейная классификация\n\nТеперь давайте поговорим про задачу классификации. Для начала будем говорить про бинарную классификацию на два класса. Обобщить эту задачу до задачи классификации на $K$ классов не составит большого труда.\n\nПусть теперь наши таргеты $y$ кодируют принадлежность к положительному или отрицательному классу, то есть принадлежность множеству $\\{-1,1\\}$, а $x$ — по-прежнему векторы из $\\mathbb{R}^D$.\n\nВ этом параграфе договоримся именно так обозначать классы, хотя в жизни вам ",
+    "pipeline_version": "0.2.0",
+    "config_summary": {
+      "clustering_method": "agglomerative",
+      "threshold": 0.6111111111111112,
+      "n_clusters": null,
+      "raw_nodes": 421,
+      "raw_edges": 315
+    },
+    "stats": {
+      "nodes": 3,
+      "edges": 4
+    }
+  },
+  "nodes": [
+    {
+      "id": "c0",
+      "label": "класс",
+      "members": [
+        "n0",
+        "n1",
+        "n2",
+        "n3",
+        "n4",
+        "n5",
+        "n6",
+        "n7",
+        "n8",
+        "n9",
+        "n10",
+        "n11",
+        "n12",
+        "n13",
+        "n14",
+        "n15",
+        "n16",
+        "n17",
+        "n18",
+        "n19",
+        "n20",
+        "n21",
+        "n22",
+        "n23",
+        "n24",
+        "n25",
+        "n26",
+        "n27",
+        "n28",
+        "n29",
+        "n30",
+        "n31",
+        "n32",
+        "n33",
+        "n34",
+        "n35",
+        "n36",
+        "n37",
+        "n38",
+        "n39",
+        "n40",
+        "n41",
+        "n42",
+        "n43",
+        "n44",
+        "n45",
+        "n46",
+        "n47",
+        "n48",
+        "n49",
+        "n50",
+        "n51",
+        "n52",
+        "n53",
+        "n54",
+        "n55",
+        "n56",
+        "n57",
+        "n58",
+        "n59",
+        "n60",
+        "n61",
+        "n62",
+        "n63",
+        "n64",
+        "n65",
+        "n66",
+        "n67",
+        "n68",
+        "n69",
+        "n70",
+        "n71",
+        "n72",
+        "n73",
+        "n74",
+        "n75",
+        "n76",
+        "n77",
+        "n78",
+        "n79",
+        "n80",
+        "n81",
+        "n82",
+        "n83",
+        "n84",
+        "n85",
+        "n86",
+        "n87",
+        "n88",
+        "n89",
+        "n90",
+        "n91",
+        "n92",
+        "n93",
+        "n94",
+        "n95",
+        "n96",
+        "n97",
+        "n98",
+        "n99",
+        "n100",
+        "n101",
+        "n102",
+        "n103",
+        "n104",
+        "n105",
+        "n106",
+        "n107",
+        "n108",
+        "n109",
+        "n110",
+        "n111",
+        "n112",
+        "n113",
+        "n114",
+        "n115",
+        "n116",
+        "n117",
+        "n118",
+        "n119",
+        "n120",
+        "n121",
+        "n122",
+        "n123",
+        "n124",
+        "n125",
+        "n126",
+        "n127",
+        "n128",
+        "n129",
+        "n130",
+        "n131",
+        "n132",
+        "n133",
+        "n134",
+        "n135",
+        "n136",
+        "n137",
+        "n138",
+        "n139",
+        "n140",
+        "n141",
+        "n142",
+        "n143",
+        "n144",
+        "n145",
+        "n146",
+        "n147",
+        "n148",
+        "n149",
+        "n150",
+        "n151",
+        "n152",
+        "n153",
+        "n154",
+        "n155",
+        "n156",
+        "n157",
+        "n158",
+        "n159",
+        "n160",
+        "n161",
+        "n162",
+        "n163",
+        "n164",
+        "n165",
+        "n166",
+        "n167",
+        "n168",
+        "n169",
+        "n170",
+        "n171",
+        "n172",
+        "n173",
+        "n174",
+        "n189",
+        "n231",
+        "n232",
+        "n233",
+        "n234",
+        "n235",
+        "n236",
+        "n237",
+        "n238",
+        "n239",
+        "n240",
+        "n241",
+        "n242",
+        "n243",
+        "n244",
+        "n245",
+        "n246",
+        "n247",
+        "n248",
+        "n249",
+        "n250",
+        "n251",
+        "n252",
+        "n253",
+        "n254",
+        "n255",
+        "n256",
+        "n257",
+        "n258",
+        "n259",
+        "n260",
+        "n261",
+        "n262",
+        "n263",
+        "n264",
+        "n265",
+        "n266",
+        "n267",
+        "n268",
+        "n269",
+        "n270",
+        "n271",
+        "n272",
+        "n273",
+        "n274",
+        "n275",
+        "n276",
+        "n277",
+        "n278",
+        "n279",
+        "n280",
+        "n281",
+        "n282",
+        "n283",
+        "n284",
+        "n285",
+        "n286",
+        "n287",
+        "n288",
+        "n289",
+        "n290",
+        "n291",
+        "n292",
+        "n293",
+        "n294",
+        "n295",
+        "n296",
+        "n297",
+        "n298",
+        "n299",
+        "n300",
+        "n301",
+        "n302",
+        "n303",
+        "n304",
+        "n305",
+        "n306",
+        "n307",
+        "n308",
+        "n309",
+        "n310",
+        "n311",
+        "n312",
+        "n313",
+        "n314",
+        "n315",
+        "n316",
+        "n317",
+        "n318",
+        "n319",
+        "n320",
+        "n321",
+        "n322",
+        "n323",
+        "n324",
+        "n325",
+        "n326",
+        "n327",
+        "n328",
+        "n329",
+        "n330",
+        "n331",
+        "n332",
+        "n333",
+        "n334",
+        "n335",
+        "n336",
+        "n337",
+        "n338",
+        "n339",
+        "n340",
+        "n341",
+        "n342",
+        "n343",
+        "n344",
+        "n345",
+        "n346",
+        "n347",
+        "n348",
+        "n349",
+        "n350",
+        "n351",
+        "n352",
+        "n353",
+        "n354",
+        "n355",
+        "n356",
+        "n357",
+        "n358",
+        "n359",
+        "n360",
+        "n361",
+        "n362",
+        "n363",
+        "n364",
+        "n365",
+        "n366",
+        "n367",
+        "n368",
+        "n369",
+        "n370",
+        "n371",
+        "n372",
+        "n373",
+        "n374",
+        "n375",
+        "n376",
+        "n377",
+        "n378",
+        "n379",
+        "n380",
+        "n381",
+        "n382",
+        "n383",
+        "n384",
+        "n385",
+        "n386",
+        "n387",
+        "n388",
+        "n389",
+        "n390",
+        "n392",
+        "n393",
+        "n394",
+        "n395",
+        "n396",
+        "n397",
+        "n398",
+        "n399",
+        "n400",
+        "n401",
+        "n402",
+        "n403",
+        "n404",
+        "n405",
+        "n406",
+        "n407",
+        "n408",
+        "n409",
+        "n410",
+        "n411",
+        "n412",
+        "n413",
+        "n414",
+        "n415",
+        "n416",
+        "n417"
+      ],
+      "size": 362,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "бинарная классификация",
+          "chunk_id": "chunk_0"
+        },
+        {
+          "text": "задачей классификации",
+          "chunk_id": "chunk_0"
+        },
+        {
+          "text": "задача классификации",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "задача классификации",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "задача классификации",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "задача классификации",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "К",
+          "chunk_id": "chunk_0"
+        },
+        {
+          "text": "обобщается",
+          "chunk_id": "chunk_0"
+        },
+        {
+          "text": "классификация",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "классификация",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "классификация",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "задачи классификации на $K$ классов",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "$y$",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "$y$",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "принадлежность к положительному или отрицательному классу",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "принадлежность | множеству $\\{-1,1\\}$",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "$x$",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "векторами из $\\mathbb{R}^D$",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "классы",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "классы",
+          "chunk_id": "chunk_3"
+        },
+        {
+          "text": "классы",
+          "chunk_id": "chunk_13"
+        },
+        {
+          "text": "классы",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "как | $\\{-1,1\\}$",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "метки",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "$\\{0,1\\}$",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "Триплеты: набор данных",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "определенная функция",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "функция",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "функция",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "функция",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "функцией",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "функция",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "функция",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "функция",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "функция",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "функция",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "функции",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "функция",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "функция",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "набор данных",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "любой",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "найти ту, которая минимизирует",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "меру ошибки",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "линейная регрессия",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "определения функции",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "$f(x) = w_0 + w_1 x_1 + w_2 x_2 + \\ldots + w_D x_D$",
+          "chunk_id": "chunk_1"
+        },
+        {
+          "text": "плоскость",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "плоскость",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "плоскость",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "плоскость",
+          "chunk_id": "chunk_3"
+        },
+        {
+          "text": "плоскости",
+          "chunk_id": "chunk_3"
+        },
+        {
+          "text": "линейная модель",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "линейная модель",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "линейная модель",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "положительный от отрицательный",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "разделить классы",
+          "chunk_id": "chunk_2"
+        },
+        {
+          "text": "выборка",
+          "chunk_id": "chunk_3"
+        },
+        {
+          "text": "выборка",
+          "chunk_id": "chunk_3"
+        },
+        {
+          "text": "линейно разделимой",
+          "chunk_id": "chunk_3"
+        },
+        {
+          "text": "условия",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "условия",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "крайне редко",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "линейная модель классификации",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "формула",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "формуле",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "формула",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "формула",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "y = signlangle w, xi rangle",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "y",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "w",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "w",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "w",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "w",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "произведении вектора w на вектор xi",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "yi",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "yi",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "yi",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "число -1 и 1",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "минимизация MSE",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "минимизации MSE",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "MSE",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "MSE",
+          "chunk_id": "chunk_5"
+        },
+        {
+          "text": "предсказания чисел -1 и 1",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "предсказания чисел -1 и 1",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "взятия знака",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "задача регрессии",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "последующего взятия знака",
+          "chunk_id": "chunk_4"
+        },
+        {
+          "text": "регрессия",
+          "chunk_id": "chunk_5"
+        },
+        {
+          "text": "регрессия",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "на объектах, которые лежат близко к разделяющей плоскости",
+          "chunk_id": "chunk_5"
+        },
+        {
+          "text": "ошибок",
+          "chunk_id": "chunk_5"
+        },
+        {
+          "text": "ошибка",
+          "chunk_id": "chunk_5"
+        },
+        {
+          "text": "ошибка",
+          "chunk_id": "chunk_5"
+        },
+        {
+          "text": "ошибка",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "ошибка",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "предсказанию, отличному от правильного на модуль",
+          "chunk_id": "chunk_5"
+        },
+        {
+          "text": "знаку, который должен быть правильным",
+          "chunk_id": "chunk_5"
+        },
+        {
+          "text": "во вторых",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "предсказание $5$ вместо $1$",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "нам",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "нам",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "нас",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "нас",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "мы",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "нас",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "нас",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "какой у числа модуль",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "лишь бы знак был правильным",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "прямая",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "прямая",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "эти точки",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "эти точки",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "функционал ошибки",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "функционал ошибки",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "функционал ошибки",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "проблемами",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "проблема",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "проблемой с прямой, которая проходит через точки",
+          "chunk_id": "chunk_6"
+        },
+        {
+          "text": "число ошибок классификатора",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "сумма",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "$\\operatorname{sign}\\langle w, x_i \\rangle$",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "$y_i \\langle w, x_i \\rangle$ To извлечь факты из данного текста, давайте разберем его по частям и выделим субъекты, отношения и объекты.",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "Сконструируем теперь функционал ошибки",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "вышеперечисленными проблемами не обладал.",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "не обладает.",
+          "chunk_id": "chunk_7"
+        },
+        {
+          "text": "$\\sum_i [y_i \\langle w, x_i \\rangle < 0]$",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "$w$ To extract the facts from the given text in the specified format, let's break down the information step by step.",
+          "chunk_id": "chunk_8"
+        },
+        {
+          "text": "отступ",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "отступ",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "отступ",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "отступы",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "отступы",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "отступы",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "отступы",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "отступы",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "отступы",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "когда | sign(y_i) = sign(langle w, x_i rangle)",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "чем больше | расстояние от x_i до разделяющей гиперплоскости",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "чем больше по модулю | отступ",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "F(M)",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "F(M)",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "от каждого из отступов",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "M",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "0",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "0",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "[М < 0]",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "[М < 0]",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "1, если | М < 0",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "0, если | М ≥ 0\" Такая функция потерь показывает долю неверно классифицированных объектов и называется *misclassification loss*. Легко видеть, что:",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": ", & M \\ge 0.\" Триплеты: misclassification loss",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "долю неверно классифицированных объектов отступ | положителен | когда | sign(y_i) = sign(langle w, x_i rangle) отступ | отрицателен | когда | sign(y_i) ≠ sign",
+          "chunk_id": "chunk_9"
+        },
+        {
+          "text": "кусочно-постоянной",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "мажорируя её",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "более гладкой функцией",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "невозможна без градиентных методов",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "производную равную нулю",
+          "chunk_id": "chunk_10"
+        },
+        {
+          "text": "разные",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "оказались",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "отрицательными",
+          "chunk_id": "chunk_11"
+        },
+        {
+          "text": "классификатор",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "классификатор",
+          "chunk_id": "chunk_13"
+        },
+        {
+          "text": "классификатор",
+          "chunk_id": "chunk_13"
+        },
+        {
+          "text": "классификатор",
+          "chunk_id": "chunk_13"
+        },
+        {
+          "text": "классификатор",
+          "chunk_id": "chunk_13"
+        },
+        {
+          "text": "классификаторы",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "ситуация",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "ситуация",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "форма",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "заказ",
+          "chunk_id": "chunk_12"
+        },
+        {
+          "text": "метрика",
+          "chunk_id": "chunk_13"
+        },
+        {
+          "text": "метрика",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "метрикой",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "метрику",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "метрику",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "качества классификации",
+          "chunk_id": "chunk_13"
+        },
+        {
+          "text": "противоположные классы",
+          "chunk_id": "chunk_13"
+        },
+        {
+          "text": "приемлемые",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "первый классификатор",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "первый классификатор",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "первый классификатор",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "предсказания с большими по модулям отступами",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "более приемлемым",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "второй классификатор",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "второго классификатора",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "менее приемлемые предсказания",
+          "chunk_id": "chunk_14"
+        },
+        {
+          "text": "первую модель",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "первая модель",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "первая модель",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "лучше",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "непотопляемой уверенностью",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "правду",
+          "chunk_id": "chunk_15"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "модель",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "моделью",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "признать неуверенность",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "классификации объектов",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "реализуем",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "считать отступы",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "идея",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "в неправильно классифицированных объектах",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "на неправильно классифицированных объектах",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "пропорционально размеру объектов",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "не бинарно",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "ставку",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "ставка",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "0,25 процентного пункта",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "модели, которая врёт",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "модели,",
+          "chunk_id": "chunk_16"
+        },
+        {
+          "text": "Ошибки перцептрона",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "простейшей идеей",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "F(M)=\\max(0,-M)",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "L_2-регуляризацией",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "лосс",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "\\lambda \\|w\\|_2^2 + \\sum_i \\max(0,-y_i\\langle w,x_i\\rangle) | To extract all facts from the given text in the specified format, I'll follow the provided rules and extract each fact individually.",
+          "chunk_id": "chunk_17"
+        },
+        {
+          "text": "$",
+          "chunk_id": "chunk_18"
+        },
+        {
+          "text": "$",
+          "chunk_id": "chunk_18"
+        },
+        {
+          "text": "$",
+          "chunk_id": "chunk_18"
+        },
+        {
+          "text": "$",
+          "chunk_id": "chunk_18"
+        },
+        {
+          "text": "аналитическую формулу",
+          "chunk_id": "chunk_18"
+        },
+        {
+          "text": "аналитическая формула",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "задача",
+          "chunk_id": "chunk_18"
+        },
+        {
+          "text": "задача",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "$\\lambda \\",
+          "chunk_id": "chunk_18"
+        },
+        {
+          "text": "$\\lambda \\",
+          "chunk_id": "chunk_23"
+        },
+        {
+          "text": "_2^2 | регулирует | величину параметра w",
+          "chunk_id": "chunk_18"
+        },
+        {
+          "text": "градиент",
+          "chunk_id": "chunk_18"
+        },
+        {
+          "text": "градиент",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "градиент",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "градиент",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "$\\nabla_w L(w,x,y)",
+          "chunk_id": "chunk_18"
+        },
+        {
+          "text": "2\\lambda w",
+          "chunk_id": "chunk_18"
+        },
+        {
+          "text": "функцию потерь L",
+          "chunk_id": "chunk_18"
+        },
+        {
+          "text": "стохастический градиентный спуск",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "функцией потерь",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "функция потерь",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "Функция потерь",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "Функция потерь",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "перцептрона Розенблатта",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "перцептрон Розенблатта",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "перцептрона Розенблатта",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "нейросети",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "задача линейной классификации",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "начальных параметров",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "начальных параметров",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "начальных параметров",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "глубокое обучение",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "неединственное решение",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "неединственное решение",
+          "chunk_id": "chunk_19"
+        },
+        {
+          "text": "нейронная сеть",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "нейронная сеть",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "нейронная сеть",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "нейронная сеть",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "нейронная сеть",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "решение не единственно",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "минимальный отступ",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "минимальный отступ",
+          "chunk_id": "chunk_23"
+        },
+        {
+          "text": "одинаковом удалении от обоих классов",
+          "chunk_id": "chunk_20"
+        },
+        {
+          "text": "$y_i\\langle w,x_i\\rangle$",
+          "chunk_id": "chunk_21"
+        },
+        {
+          "text": "объекты",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "объекты",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "объекты",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "объектами",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "объектом",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "объект",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "объектов",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "правильно",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "классифицированы",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "отодвинуть",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "отодвинуть",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "разделяющую плоскость",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "разделяющая плоскость",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "минимизируемое выражение",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "минимизируемое выражение",
+          "chunk_id": "chunk_23"
+        },
+        {
+          "text": "другим образом",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "люди",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "люди",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "Россия",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "русскую литературу",
+          "chunk_id": "chunk_22"
+        },
+        {
+          "text": "$\\dfrac{2}{\\",
+          "chunk_id": "chunk_23"
+        },
+        {
+          "text": "_2}$ | быть максимизировано | ширину полосы",
+          "chunk_id": "chunk_23"
+        },
+        {
+          "text": "шина полосы",
+          "chunk_id": "chunk_23"
+        },
+        {
+          "text": "шина полосы",
+          "chunk_id": "chunk_23"
+        },
+        {
+          "text": "$\\lambda \\|w\\|_2^2$",
+          "chunk_id": "chunk_23"
+        },
+        {
+          "text": "_2^2 + \\sum_i \\max(0,1-y_i\\langle w,x_i\\rangle)$ | быть минимизировано | $\\min_w$",
+          "chunk_id": "chunk_23"
+        },
+        {
+          "text": "решение нашей исходной задачи",
+          "chunk_id": "chunk_23"
+        },
+        {
+          "text": "первое слагаемое",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "первое слагаемое",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "ширине полосы",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "минимизацию",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "штраф",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "штраф",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "неправильным расположением объектов",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "разделительной полосой",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "никто",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "никто",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "линейное разбиение классов",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "проведение оптимальной плоскости без ошибок",
+          "chunk_id": "chunk_24"
+        },
+        {
+          "text": "логистическая регрессия",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "логистическая регрессия",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "логистическая регрессия",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "логистическая регрессия",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "логистической регрессии",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "логистическая регрессия",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "логистической регрессией",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "логистическая регрессия",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "svm",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "svm",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "статью или лекцию",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "решается строгим образом",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "интересным методом",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "желания посмотреть на классификацию",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "нулём и единицей",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "F1-мера",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "F1-мера",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "F1-мера",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "баланс между точностью и полнотой",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "качества модели",
+          "chunk_id": "chunk_32"
+        },
+        {
+          "text": "желания",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "предсказание кликов",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "предсказание кликов",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "рекламе",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "обязательный клик",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "обучающий лог",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "наличие клика",
+          "chunk_id": "chunk_33"
+        },
+        {
+          "text": "клика",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "клика",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "что",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "реализацией",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "вероятность клика",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "истинной кликабельности",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "отношение положительных примеров",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "отношению положительных и отрицательных примеров",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "Триплеты: возможность",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "в образовании",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "возможность",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "возможность",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "возможность",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "возможность",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "очень полезной",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "образовании",
+          "chunk_id": "chunk_34"
+        },
+        {
+          "text": "этой случайной величины",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "вероятности",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "вероятностью",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "вероятность",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "величина от 0 до 1",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "что нет простого способа обучить линейную модель",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "ограничение в отношении положительных и отрицательных примеров",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "какой-то объект",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "какой-то объект",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "какой-то объект",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "ответы модели",
+          "chunk_id": "chunk_35"
+        },
+        {
+          "text": "ответом модели",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "из этой ситуации можно выйти так",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "диапазоном значений | (-∞, ∞)",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "логит",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "логит",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "логиты",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "log odds",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "логарифм отношения вероятности положительного события к отрицательному",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "$\\log\\left(\\dfrac{p}{1-p}\\right)$",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "$\\log\\left(\\dfrac{p}{1-p}\\right)$",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "если ответом нашей модели является",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "можно",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "$p$",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "$p$",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "$p$",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "$\\frac{1}{1+e^{-\\langle w,x_i\\rangle}}\" Триплеты: из этой ситуации можно выйти так | научить линейную модель правильно предсказывать | какой-то объект этот объект | связан с | вероятностью вероятность | связана с | диапазоном значений | (-∞, ∞) логит | является | объектом логит | также называется | log odds логарифм отношения вероятности положительного события к отрицательному | равен | $\\log\\left(\\dfrac{p}{1-p}\\right)$ $\\log\\left(\\dfrac{p}{1-p}\\right)$ | является | ответом модели $\\log\\left(\\dfrac{p}{1-p}\\right)$ | преобразовать в | вероятность если ответом нашей модели является | то искомую",
+          "chunk_id": "chunk_36"
+        },
+        {
+          "text": "$\\frac{p}{1-p}$",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "$e^{\\langle w,x_i\\rangle}$",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "$\\sigma(z)$",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "$\\frac{1}{1+e^{-z}}$",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "$\\frac{1}{1+e^{-z}}$",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "сигмоидой",
+          "chunk_id": "chunk_37"
+        },
+        {
+          "text": "сигмоида",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "$\\langle w,x_i \\rangle$",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "входом функции $\\sigma$",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "$\\sigma$",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "метод максимума правдоподобия",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "распределению Бернулли",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "распределение Бернулли",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "распределение Бернулли",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "лучшей предсказываемости логитов",
+          "chunk_id": "chunk_38"
+        },
+        {
+          "text": "при бросках монетки",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "монетка",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "орлом",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "орёл",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "событие",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "клик на объекте",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "пользователю кликнувшему на него",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "максимальное правдоподобие",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "когда логарифм функци",
+          "chunk_id": "chunk_39"
+        },
+        {
+          "text": "случайное событие",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "клика пользователя",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "случаем события",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "вероятность получить значение таргета",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "правдоподобием",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "правдоподобие",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "правдоподобие",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "правдоподобие",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "произведение вероятностей",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "$x_i$",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "наблюдаемые данные",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "$y_i$",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "значения таргета",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "$w$",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "веса модели",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "$p(y_i \\mid x_i, w)$",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "вероятности классификации",
+          "chunk_id": "chunk_40"
+        },
+        {
+          "text": "насколько вероятно получить данные значения таргета $y$ при данных $X$ и весах $w$",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "$p(y \\mid X,w)=\\prod_i p_i^{y_i}(1-p_i)^{1-y_i}$",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "$p_i$",
+          "chunk_id": "chunk_41"
+        },
+        {
+          "text": "произведение",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "иметь дело с суммой",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "логарифмическое правдоподобие",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "формула вероятности",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "формула вероятности",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "формула для вероятности",
+          "chunk_id": "chunk_42"
+        },
+        {
+          "text": "умножением правдоподобия на минус один",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "явной формулы решения",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "L(w,X,y)",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "-\\sum_i \\left(y_i\\log(\\sigma(\\langle w,x_i\\rangle))+(1-y_i)\\log(\\sigma(-\\langle w,x_i\\rangle))\\right)",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "\\sigma",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "функцией активации",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "x_i",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "i-й пример",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "y_i",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "i-го примера",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "\\sigma(\\langle w,x_i\\rangle)",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "0,5 если предсказанный класс = 1",
+          "chunk_id": "chunk_43"
+        },
+        {
+          "text": "свойство сигмоиды",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "log(sigma(z))",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "производная по z",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "sigma(-z)",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "предсказание модели",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "предсказание модели",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "p_i",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "l_i",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "y_i - p_i",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "\\sum_i l_i^2",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "квадратом ошибки",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "MSE (Mean Squared Error)",
+          "chunk_id": "chunk_45"
+        },
+        {
+          "text": "как мы договаривались",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "вероятность положительного класса",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "сигмоидную функцию",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "скалярное произведение",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "сумма произведений соответствующих элементов вектора весов и вектора признаков",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "вектор весов",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "результат обучения модели",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "вектор признаков",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "набор числовых характеристик объекта",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "измеряемые или рассчитываемые характеристики",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "способами описания объекта",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "способами описания",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "принятия решения о классификации объекта",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "принятие решения",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "сравнения предсказаний с порогом",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "порог",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "порог",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "порог",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "порог",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "константа, определяемая пользователем",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "константа",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "выбрана в зависимости от задачи и данных",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "обработки и анализа данных",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "обработка и анализ",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "математических и статистических методов",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "математические и статистические",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "выявления закономерностей и тенденций в данных",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "выявление закономерностей",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "улучшить точность предсказаний",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "точность предсказаний",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "регуляризации и эпилепсии",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "предсказание",
+          "chunk_id": "chunk_47"
+        },
+        {
+          "text": "предсказания",
+          "chunk_id": "chunk_47"
+        },
+        {
+          "text": "предсказание",
+          "chunk_id": "chunk_47"
+        },
+        {
+          "text": "$0$",
+          "chunk_id": "chunk_47"
+        },
+        {
+          "text": "$0$",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "интуитивный",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "ответ",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "ответ",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "взят порог",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "$0{,}5$",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "отдельно",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "отложенной тестовой выборке",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "долю положительных и отрицательных классов",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "доля положительных и отрицательных классов",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "долю",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "примерно совпадения с реальной",
+          "chunk_id": "chunk_48"
+        },
+        {
+          "text": "логистической классификацией",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "реальной долей",
+          "chunk_id": "chunk_49"
+        },
+        {
+          "text": "функцию потерь для логистической регрессии",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "более компактном виде",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "$\\pm 1$",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "$\\pm 1$",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "метки классов",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "$0$ и $1$",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "$L(w,X,y)$",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "$L(w,X,y)$",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "$N$",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "экспонента",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "$1+e^{-y_i\\langle w,x_i\\rangle}$",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "сумму по N",
+          "chunk_id": "chunk_50"
+        },
+        {
+          "text": "Разделенная поверхность модели логистической регрессии",
+          "chunk_id": "chunk_51"
+        },
+        {
+          "text": "Отделения",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "отделения",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "множество точек",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "множество точек",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "провести отсечку",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "отсечка",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "значению предсказанной вероятности",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "значение предсказанной вероятности",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "не очевидное",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "не очевидным",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "я",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "я",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "мне",
+          "chunk_id": "chunk_55"
+        },
+        {
+          "text": "это будет правильный ответ",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "это будет",
+          "chunk_id": "chunk_52"
+        },
+        {
+          "text": "выбор значения",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "выбор значения",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "выбор значения",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "значение",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "не настоящая вероятность",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "$\\frac{1}{2}$",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "$\\frac{1}{2}$",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "значением границы",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "калибровкой классификаторов",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "кали",
+          "chunk_id": "chunk_53"
+        },
+        {
+          "text": "разделяющая поверхность",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "коэффициенты",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "коэффициент",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "случай",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "$a=-1+i$",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "$i^2-4(-1+i)(2-i)$",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "$1-8+4i+4i+4$",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "$x_1$ и $x_2$",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "$-\\frac{b}{a}$",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "$\\frac{c}{a}$",
+          "chunk_id": "chunk_54"
+        },
+        {
+          "text": "произведению корней",
+          "chunk_id": "chunk_54"
+        }
+      ]
+    },
+    {
+      "id": "c1",
+      "label": "многие другой",
+      "members": [
+        "n391",
+        "n418",
+        "n419",
+        "n420"
+      ],
+      "size": 4,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "гиперплоскостью",
+          "chunk_id": "chunk_51"
+        },
+        {
+          "text": "гиперплоскость",
+          "chunk_id": "chunk_55"
+        },
+        {
+          "text": "гиперплоскостью",
+          "chunk_id": "chunk_55"
+        },
+        {
+          "text": "Триплеты: я",
+          "chunk_id": "chunk_55"
+        },
+        {
+          "text": "почему это происходит",
+          "chunk_id": "chunk_55"
+        },
+        {
+          "text": "почему это происходит",
+          "chunk_id": "chunk_55"
+        },
+        {
+          "text": "многие другие",
+          "chunk_id": "chunk_55"
+        },
+        {
+          "text": "многие другие",
+          "chunk_id": "chunk_55"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "label": "обработка данные",
+      "members": [
+        "n175",
+        "n176",
+        "n177",
+        "n178",
+        "n179",
+        "n180",
+        "n181",
+        "n182",
+        "n183",
+        "n184",
+        "n185",
+        "n186",
+        "n187",
+        "n188",
+        "n190",
+        "n191",
+        "n192",
+        "n193",
+        "n194",
+        "n195",
+        "n196",
+        "n197",
+        "n198",
+        "n199",
+        "n200",
+        "n201",
+        "n202",
+        "n203",
+        "n204",
+        "n205",
+        "n206",
+        "n207",
+        "n208",
+        "n209",
+        "n210",
+        "n211",
+        "n212",
+        "n213",
+        "n214",
+        "n215",
+        "n216",
+        "n217",
+        "n218",
+        "n219",
+        "n220",
+        "n221",
+        "n222",
+        "n223",
+        "n224",
+        "n225",
+        "n226",
+        "n227",
+        "n228",
+        "n229",
+        "n230"
+      ],
+      "size": 55,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "обучающие примеры",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "обучающими примерами",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "итоговое положение плоскости",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "итоговое положение плоскости",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "опорные векторы",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "опорные векторы",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "опорные векторы",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "опорные векторы",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "опорными векторами",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "ближайшими к плоскости правильно классифицированными объектами",
+          "chunk_id": "chunk_25"
+        },
+        {
+          "text": "метод опорных векторов",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "сильнейшим из известных методов машинного обучения",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "шестидесятые годы",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "периодом активного развития метода",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "Триплеты: объекты",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "объектами в изображении",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "обнаруживаются и классифицируются",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "обнаружения и классификации объектов",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "Триплеты: алгоритмы машинного обучения",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "обработки данных",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "обработка данных",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "алгоритма машинного обучения",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "алгоритма машинного обучения",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "алгоритмы машинного обучения",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "алгоритмов машинного обучения",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "алгоритмы машинного обучения",
+          "chunk_id": "chunk_46"
+        },
+        {
+          "text": "деревья решений",
+          "chunk_id": "chunk_26"
+        },
+        {
+          "text": "самый сильный метод машинного обучения",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "сформулирован в",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "методы, основанные на деревьях решений",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "методами, основанными на нейросетях",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "методы, основанные на нейросетях",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "пальму первенства",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "США",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "14,6 миллионов случаев гриппа",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": ",6 миллионов случаев гриппа",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "3,5% от всего населения страны",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": ",5%",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "страны",
+          "chunk_id": "chunk_27"
+        },
+        {
+          "text": "выбор",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "выбор",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "специальный алгоритм",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "оптимальные гиперпараметры",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "обед",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "обед",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "обеденного перерыва",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "обсуждения",
+          "chunk_id": "chunk_28"
+        },
+        {
+          "text": "трава",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "зеленее",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "компьютеры",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "медленнее",
+          "chunk_id": "chunk_29"
+        },
+        {
+          "text": "SVM",
+          "chunk_id": "chunk_30"
+        },
+        {
+          "text": "SVM",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "SVM",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "SVM",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "отличными свойствами",
+          "chunk_id": "chunk_30"
+        },
+        {
+          "text": "минимальную склонность к переобучению",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "частью | популярных классов линейных классификаторов",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "модифицировать",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "модификация алгоритма",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "ядерный SVM",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "ядровый SVM",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "проводить нелинейные разделяющие поверхности",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "строгий вывод постановки задачи SVM",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "прочитать тут",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "получению нового набора данных",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "новый набор данных",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "обучения модели машинного обучения",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "обработка данных и обучение модели",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "выполнены с помощью различных алгоритмов",
+          "chunk_id": "chunk_31"
+        },
+        {
+          "text": "случайный лес",
+          "chunk_id": "chunk_31"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "ce0",
+      "source": "c0",
+      "target": "c2",
+      "label": "использоваться в качество",
+      "members": [
+        "e148",
+        "e264"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce1",
+      "source": "c2",
+      "target": "c0",
+      "label": "применяться для",
+      "members": [
+        "e265"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce2",
+      "source": "c0",
+      "target": "c1",
+      "label": "являться",
+      "members": [
+        "e290"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce3",
+      "source": "c1",
+      "target": "c0",
+      "label": "относиться к",
+      "members": [
+        "e314"
+      ],
+      "size": 1,
+      "embedding": []
+    }
+  ]
+}
