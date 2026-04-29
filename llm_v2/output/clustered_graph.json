@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "created_at": "2026-02-23T12:00:00Z",
+    "source_text": "Test text...",
+    "pipeline_version": "0.2.0",
+    "config_summary": {
+      "clustering_method": "agglomerative",
+      "threshold": 0.5
+    },
+    "stats": {
+      "nodes": 4,
+      "edges": 3
+    }
+  },
+  "nodes": [
+    {
+      "id": "c0",
+      "label": "ЕЦБ",
+      "members": [
+        "n0",
+        "n3"
+      ],
+      "size": 2,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Европейский центральный банк",
+          "chunk_id": "chunk_0"
+        },
+        {
+          "text": "ЕЦБ",
+          "chunk_id": "chunk_0"
+        }
+      ]
+    },
+    {
+      "id": "c1",
+      "label": "ключевая процентная ставка",
+      "members": [
+        "n1"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "ключевую процентную ставку",
+          "chunk_id": "chunk_0"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "label": "инфляция",
+      "members": [
+        "n2"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "инфляции",
+          "chunk_id": "chunk_0"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "label": "Кристин Лагард",
+      "members": [
+        "n4"
+      ],
+      "size": 1,
+      "embedding": [],
+      "mentions": [
+        {
+          "text": "Кристин Лагард",
+          "chunk_id": "chunk_1"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "ce0",
+      "source": "c0",
+      "target": "c1",
+      "label": "снизить",
+      "members": [
+        "e0"
+      ],
+      "size": 1,
+      "embedding": []
+    },
+    {
+      "id": "ce1",
+      "source": "c2",
+      "target": "c1",
+      "label": "замедление",
+      "members": [
+        "e1",
+        "e2"
+      ],
+      "size": 2,
+      "embedding": []
+    },
+    {
+      "id": "ce2",
+      "source": "c3",
+      "target": "c0",
+      "label": "президент",
+      "members": [
+        "e3"
+      ],
+      "size": 1,
+      "embedding": []
+    }
+  ]
+}
